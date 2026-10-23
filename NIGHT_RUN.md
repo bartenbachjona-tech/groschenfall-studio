@@ -1,0 +1,72 @@
+# Groschenfall – Nachtproduktion (Runbook)
+
+Ziel pro Nacht: **3 Shorts** (je YouTube- und TikTok/Insta-Version) und **in geraden Nächten 1 langes Video** (6–7 min), fertig zum Hochladen. Jona veröffentlicht selbst. **Niemals selbst veröffentlichen oder planen.**
+
+Regeln, die immer gelten, stehen in `docs/KANAL_REGELN.md`. Handwerk (Hooks, Skript, Thumbnail, Titel, Kritik-Rubrik) steht in `docs/PLAYBOOK.md`.
+
+## 0. Setup (frische Umgebung)
+```bash
+cd remotion && npm ci --no-audit --no-fund && cd ..
+mkdir -p work out
+D=$(TZ=Europe/Berlin date +%Y-%m-%d)
+```
+Python (numpy, scipy, Pillow) und ffmpeg sind vorinstalliert. Browser: `/opt/pw-browsers/...` (überschreibbar mit `GF_BROWSER`).
+Nachtnummer: `state/log.md` lesen. Langes Video, wenn die letzte Nacht keins hatte.
+
+## 1. Themen (Agent „Scout“, Skills: idea-generation-and-ideation, trend-jacking, tubealfred youtube-keyword-ideas wenn verbunden)
+- Websuche: deutsche Nachrichten der letzten 7 Tage zu Geld, Steuern, Rente, Bürgergeld, Arbeit, Mieten, Preise, Politiker-Aussagen mit Zahlen.
+- `state/topics_done.md` lesen, keine Wiederholungen.
+- 10 Kandidaten, jeder mit Scoring nach PLAYBOOK §1. Nur Themen mit **Score ≥ 8/10** und belegbaren Primärquellen.
+- Langes Video: Thema muss zum Shorts-Publikum passen (siehe Kanal-Analyse). Die 3 Shorts der Nacht: mind. 1 als Teaser zum langen Video (falls eins produziert wird).
+
+## 2. Hooks (Agent „Hook“, Skill: hook-writer)
+Pro Short 5 Hook-Varianten (gesprochen + Text im Bild), dann die beste nach PLAYBOOK §2. Muster, die bei uns funktioniert haben: Auslandsvergleich („In Frankreich …“), persönlich mit Zahl („Früher 5, heute 2 – einer davon bist du“), wörtliches Politiker-Zitat mit Kontext. Schwach: abstrakte Zahlen ohne „du“.
+
+## 3. Skript (Agent „Autor“, Skills: short-form-video-script / youtube-long-form, storytelling-and-narrative)
+- Short: 90–120 Wörter, 35–45 s; Absätze als Keys `hook, b1, b2, b3[, b4]`, Enden `yt` (Verweis aufs lange Video, wenn vorhanden, sonst „Folg Groschenfall für mehr“) und `tt` (Kommentarfrage).
+- Langvideo: 900–1.050 Wörter, Kapitel 0–7, Format wie `docs/Video05-Krankschreibung-Skript.md`.
+- Zahlen für die Stimme ausschreiben („zweitausendzweiundzwanzig“).
+
+## 4. Faktencheck (Agent „Prüfer“, Skill: content-research-and-sourcing)
+Jede Zahl, jedes Zitat gegen Primärquelle (Destatis, Ministerium, Gesetzestext, Studie, Originalinterview). Faktenblatt `work/<id>/fakten.md` mit Links. Nicht belegbar → umformulieren oder streichen. Zitate echter Personen nur wörtlich.
+
+## 5. Kritiker (Agent mit `model: "fable"`, sieht nur Skript + Faktenblatt + PLAYBOOK §9)
+Bewertet hart nach Rubrik. **Freigabe nur bei ≥ 8/10 in jeder Kategorie.** Sonst Überarbeitung (max. 2 Runden), danach Thema verwerfen und nächsten Kandidaten nehmen.
+
+## 6. Stimme (ElevenLabs-Connector)
+- Voice `r8MyP4qUsq5WFFSkPdfV` (Johannes), Modell `eleven_multilingual_v2`, **generations_count: 1**.
+- Pro Short EIN Aufruf: Absätze getrennt durch `<break time="1.6s" />` (Hook ruhig als eigener Aufruf, wenn Betonung kritisch).
+- Vorher `estimate_only: true`. Budget pro Nacht max. ~3.500 Credits ohne, ~10.500 mit langem Video. Bei < 5.000 Rest-Credits: nur Shorts.
+- `creative_get_flow_run_status` pollen, `content_url` mit `curl -sS -o` laden (Link 2 h gültig).
+```bash
+python3 tools/gf.py split work/<id> work/<id>/all.mp3 hook,b1,b2,b3,yt,tt
+python3 tools/gf.py voice work/<id> --tempo 1.10        # Shorts; Langvideo --tempo 1.06
+python3 tools/gf.py short work/<id> remotion s<NR> hook,b1,b2,b3
+```
+`work/<id>/texts.json` vorher anlegen (Key → exakter gesprochener Text ohne break-Tags).
+
+## 7. Animation (Regie: Hauptagent; Skill: remotion-best-practices)
+- Vorlage: `remotion/src/ch/Short8.tsx` (Aufbau, Untertitel, SFX, Enden). Neue Datei `src/ch/Short<NR>.tsx`, in `src/Root.tsx` registrieren (`Short<NR>YT`, `Short<NR>TT`).
+- Erstes Bild = selbsterklärendes Titelbild, wenig Text, eine klare Illustration. Echte Personen nur stilisiert (wie `MerzBust`), nie Logos/Markenverpackungen.
+- SFX nur `soft, whoosh, stamp, ding, paper, marimba, coins` (kein „pop“).
+- Kontrolle: `node stills.mjs Short<NR>TT 0,90,...` → Kontaktbogen ansehen, Überlappungen fixen, erst dann rendern.
+```bash
+cd remotion && node renderall.mjs Short<NR>YT Short<NR>TT && cd ..
+python3 tools/gf.py mixshort remotion/out/v4_Short<NR>YT.mp4 out/$D/Groschenfall_Short<NR>_<Slug>_YouTube.mp4
+python3 tools/gf.py mixshort remotion/out/v4_Short<NR>TT.mp4 out/$D/Groschenfall_Short<NR>_<Slug>_TikTok-Insta.mp4
+```
+Langvideo: Kapitel als `src/v<NR>/V<NR>Ch<i>.tsx` nach Muster `src/v5/`, `gf.py long`, rendern, `gf.py mixlong` (Musikplan hook→k23→k45→k67), `gf.py srt`, `gf.py compress`. Thumbnail im Stil von Video 2 (`src/ch/Thumb5.tsx` T5D): Kicker amber, 2-zeilige weiße Headline mit amber „?“, ein großes schattiertes 3D-Objekt auf Schräge + Figur. 3 Varianten für A/B-Test.
+
+## 8. Texte
+`out/$D/UPLOAD.md`: pro Video Titel (YouTube), Beschreibung mit Quellen + KI-Hinweis, Tags, angepinnter Kommentar, TikTok/Insta-Caption (Instagram max. 5 Hashtags), empfohlene Uhrzeit (Shorts 12/17/20 Uhr, langes Video 17–18 Uhr), „Ähnliches Video“-Empfehlung.
+
+## 9. Abliefern
+1. Alle Dateien aus `out/$D/` mit SendUserFile schicken (Videos `display: attach`).
+2. Falls der PC erreichbar ist: per `device_commit_files` nach `C:\Users\barte\Videos\Groschenfall\Nacht\<Datum>\` (vorher nach /mnt/user-data/outputs kopieren). Nicht erreichbar ist kein Fehler.
+3. `state/topics_done.md` + `state/log.md` ergänzen, neue `.tsx`-Dateien und Texte committen und pushen (keine mp4/wav).
+4. Eine kurze Zusammenfassung an Jona (SendUserMessage + Push): was fertig ist, Hooks, offene Punkte.
+
+## Abbruchregeln
+- Faktenlage unklar → Thema verwerfen statt raten.
+- Credits knapp → Langvideo auslassen, Shorts priorisieren.
+- Render-Fehler nach 2 Versuchen → Short weglassen, im Log notieren.
