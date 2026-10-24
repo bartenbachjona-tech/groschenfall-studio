@@ -4,3 +4,4 @@ remotion/public/audio/*.wav
 work/
 *.mp4
 __pycache__/
+out/
