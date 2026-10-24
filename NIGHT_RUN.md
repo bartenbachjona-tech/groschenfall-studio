@@ -1,6 +1,6 @@
 # Groschenfall – Nachtproduktion (Runbook)
 
-Ziel pro Nacht: **3 Shorts** (je YouTube- und TikTok/Insta-Version) und **in geraden Nächten 1 langes Video** (6–7 min), fertig zum Hochladen. Jona veröffentlicht selbst. **Niemals selbst veröffentlichen oder planen.**
+Ziel pro Nacht: **3 Shorts** (je YouTube- und TikTok/Insta-Version) und 1 langes Video, wenn die letzte Nacht keins hatte und Credits reichen. Freigegebene Shorts werden **für denselben Tag 17/18/19 Uhr terminiert** (§9a). **Niemals sofort veröffentlichen.** Langvideos nie automatisch terminieren.
 
 Regeln, die immer gelten, stehen in `docs/KANAL_REGELN.md`. Handwerk (Hooks, Skript, Thumbnail, Titel, Kritik-Rubrik) steht in `docs/PLAYBOOK.md`.
 
@@ -69,6 +69,15 @@ Langvideo: Kapitel als `src/v<NR>/V<NR>Ch<i>.tsx` nach Muster `src/v5/`, `gf.py 
 2. Falls der PC erreichbar ist: per `device_commit_files` nach `C:\Users\barte\Videos\Groschenfall\Nacht\<Datum>\` (vorher nach /mnt/user-data/outputs kopieren). Voraussetzung: Der Ordner `Videos\Groschenfall` ist in der Sitzung verbunden (`get_device_info.connectedFolders`); nachts kann niemand eine Freigabe bestätigen. Nicht erreichbar ist kein Fehler.
 3. `state/topics_done.md` + `state/log.md` ergänzen, neue `.tsx`-Dateien und Texte committen und pushen (keine mp4/wav).
 4. Eine kurze Zusammenfassung an Jona (SendUserMessage + Push): was fertig ist, Hooks, offene Punkte.
+
+## 9a. Terminieren (seit 24.10.2026, Jonas Entscheidung)
+Nur Shorts mit Kritiker-Freigabe. Reihenfolge: zwei Shorts mit ähnlichem Thema nicht direkt hintereinander. Zeiten Europe/Berlin: 17:00, 18:00, 19:00 am selben Tag.
+- **Zugang:** Claude-in-Chrome auf Jonas PC (`tabs_context_mcp`). Nicht erreichbar → nichts terminieren, melden. Nie Passwörter eingeben, nichts löschen, keine Einstellungen ändern (Hinweis-Dialoge mit „Abbrechen“/„Verstanden“ schließen).
+- **Dateigröße:** `file_upload` der Erweiterung schafft max. 10 MB pro Aufruf → vorher 2-Pass-x264 auf ~9,2 MB rechnen (Zielbitrate = 9,2·8·1024² / Dauer − 128k, `-preset medium`), Ablage unter `/mnt/user-data/outputs/upload/` (nur dort/verbundene Ordner sind erlaubt).
+- **YouTube Studio** (Kanal Groschenfall, ID `UC9YJQdkr4rRO-jwkB2aY_kw`; prüfen, dass nicht der Privatkanal „Jona Bartenbach“ aktiv ist): `studio.youtube.com/channel/<ID>/videos/upload?d=ud` → `find` „file input“ → `file_upload`. Titel/Beschreibung per `find` (Textbox-Ref) anklicken, dann tippen (Klick auf Koordinaten traf das Feld nicht immer); mit JS `ytcp-uploads-dialog #textbox` Länge prüfen. „Nein, nicht speziell für Kinder“, „Mehr anzeigen“ → „Ja, es wurde KI verwendet“, Tags kommagetrennt. 3× „Weiter“. „Veröffentlichungszeitpunkt festlegen“ aufklappen: Datum **im Kalender-Eingabefeld tippen** (Klick auf Tage verrutscht), Uhrzeit tippen + Enter, danach Uhrzeit nochmals kontrollieren (wurde einmal auf 00:00 zurückgesetzt), Zeitzone „(GMT+0200/0100) Ortszeit“. Button „Veröffentlichungszeitpunkt festlegen“ → Bestätigungsdialog mit Link notieren.
+- **TikTok Studio:** `tiktok.com/tiktokstudio/upload` (lädt ~10 s), versteckten file input per `find`. Dialog „Automatische Inhaltsprüfungen“ → „Abbrechen“. Beschreibung: Dateiname löschen (Strg+A, Entf), Caption tippen; Hashtags einzeln tippen, 2 s warten, Enter (übernimmt Vorschlag). Der erste Hashtag direkt nach einem Zeilenumbruch geht manchmal verloren → am Ende prüfen und nachtragen. „Zeitplan“ wählen (Dialog „Erlauben“), Uhrzeit im Scroll-Picker: Stunde anklicken, Minutenliste nach oben scrollen, „00“ anklicken, Zoom-Kontrolle, dann „Planen“. Danach in der Inhaltsliste Datum/Uhrzeit prüfen.
+- **Instagram:** instagram.com kann nicht planen. Nur Meta Business Suite (`business.facebook.com`, Reel erstellen → Planen). Nicht eingeloggt → nicht terminieren, melden.
+- Ergebnis (Plattform, Uhrzeit, Link) in `state/log.md` und in die Nachricht an Jona.
 
 ## Abbruchregeln
 - Faktenlage unklar → Thema verwerfen statt raten.
