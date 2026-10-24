@@ -6,12 +6,12 @@ Projektordner work/<id>/ enthält:
   raw/<key>.mp3       ElevenLabs-Rohaufnahmen (eine Datei pro Absatz ODER ein Sammel-mp3, siehe 'split')
 
 Befehle:
-  gf.py split  <proj> <sammel.mp3> key1,key2,...   Sammelaufnahme an Pausen >=1.0 s in raw/<key>.mp3 teilen
+  gf.py split  <proj> <sammel.mp3> key1,key2,...   Sammelaufnahme an den N-1 längsten Pausen in raw/<key>.wav teilen
   gf.py voice  <proj> [--tempo 1.10] [--gap 0.28]  Tonhöhe -1.2 HT, Tempo, Wort-Alignment, Pausen kürzen -> wav/<key>.wav, words.json
   gf.py short  <proj> <remo> <name> body1,body2,... [--gaps 0.35,0.4,...]
                                                    baut public/audio/<name>_yt.wav, _tt.wav + src/data/<name>.json (Enden: keys 'yt','tt')
   gf.py long   <proj> <remo> <name> "k1,k2|k3,k4|..."  pro Kapitel (|) Audio + Timing: public/audio/<name>ch<i>.wav, src/data/<name>ch<i>.json
-  gf.py mixshort <in.mp4> <out.mp4> [--music <mp3>]   Musik leise (-27/-21 dB, Lowpass 6 kHz) + Loudnorm -14
+  gf.py mixshort <in.mp4> <out.mp4> [--music <mp3>]   Musik leise (-27/-21 dB, Lowpass 6 kHz) + Loudnorm -14 (zweistufig)
   gf.py mixlong  <out.mp4> <music_plan.json> part1.mp4 part2.mp4 ...   verkettet + Musik nach Plan
          music_plan.json: [["music_hook.mp3", startSek], ["music_k23.mp3", startSek], ...]
   gf.py srt    <proj> <remo> <name> <nChapters> <out.srt>   Untertitel aus Timing-JSONs (Langvideo)
@@ -45,24 +45,30 @@ def readwav(fn):
 
 # ---------------------------------------------------------------- split
 def cmd_split(a):
+    """Schneidet an den N-1 längsten Pausen (N = Anzahl Keys). So stören weder Pausen
+    innerhalb eines Absatzes noch sehr kurze Absätze ("Also:") – beides ging früher schief."""
     raw = os.path.join(a.proj, 'raw'); os.makedirs(raw, exist_ok=True)
     keys = a.keys.split(',')
     tmp = os.path.join(a.proj, '_all.wav')
     sh('ffmpeg', '-loglevel', 'error', '-y', '-i', a.src, '-ac', '1', '-ar', str(SR), tmp)
-    out = subprocess.run(['ffmpeg', '-i', tmp, '-af', 'silencedetect=n=-40dB:d=1.0', '-f', 'null', '-'],
+    out = subprocess.run(['ffmpeg', '-i', tmp, '-af', 'silencedetect=n=-40dB:d=0.6', '-f', 'null', '-'],
                          capture_output=True, text=True).stderr
     st = [float(v) for v in re.findall(r'silence_start: ([\d.]+)', out)]
     en = [float(v) for v in re.findall(r'silence_end: ([\d.]+)', out)]
     dur = len(readwav(tmp)[1]) / SR
-    cuts = [0.0]; segs = []
-    bounds = list(zip(st, en))
-    t0 = 0.0
-    for s, e in bounds:
+    sil = [(s, e) for s, e in zip(st, en) if s > 0.05 and e < dur - 0.05]  # Rand-Stille ignorieren
+    lead = en[0] if st and st[0] <= 0.05 else 0.0
+    tail = st[-1] if st and len(en) == len(st) and en[-1] >= dur - 0.05 else (st[-1] if len(st) > len(en) else dur)
+    if len(sil) < len(keys) - 1:
+        sys.exit(f'FEHLER: nur {len(sil)} Pausen gefunden, {len(keys)-1} nötig')
+    cuts = sorted(sorted(sil, key=lambda x: x[1] - x[0], reverse=True)[:len(keys) - 1])
+    shortest = min(e - s for s, e in cuts); rest = sorted((e - s for s, e in sil if (s, e) not in cuts), reverse=True)
+    if rest and rest[0] > shortest * 0.85:
+        print(f'WARNUNG: Pausen kaum unterscheidbar (kürzester Schnitt {shortest:.2f}s, längste Rest-Pause {rest[0]:.2f}s) – Ergebnis prüfen!')
+    segs = []; t0 = lead
+    for s, e in cuts:
         segs.append((t0, s)); t0 = e
-    segs.append((t0, dur))
-    segs = [(s, e) for s, e in segs if e - s > 0.4]
-    if len(segs) != len(keys):
-        sys.exit(f'FEHLER: {len(segs)} Segmente gefunden, {len(keys)} Keys erwartet: {[(round(s,1),round(e,1)) for s,e in segs]}')
+    segs.append((t0, tail))
     for k, (s, e) in zip(keys, segs):
         sh('ffmpeg', '-loglevel', 'error', '-y', '-ss', f'{max(0,s-0.15):.3f}', '-to', f'{e+0.2:.3f}', '-i', tmp, os.path.join(raw, f'{k}.wav'))
     os.remove(tmp)
@@ -204,6 +210,15 @@ def _duck(a, m, sr):
     return mix / (np.abs(mix).max() / 0.95)
 
 
+def _ln2(inp, target=-14.0, tp=-1.5, lra=11):
+    """Zweistufiges loudnorm: misst zuerst, dann lineare Korrektur (einstufig landete bei ca. -15 LUFS)."""
+    out = subprocess.run(['ffmpeg', '-hide_banner', '-i', inp, '-vn', '-af', f'loudnorm=I={target}:TP={tp}:LRA={lra}:print_format=json', '-f', 'null', '-'],
+                         capture_output=True, text=True).stderr
+    m = json.loads(out[out.rindex('{'):out.rindex('}') + 1])
+    return (f"loudnorm=I={target}:TP={tp}:LRA={lra}:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
+            f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true")
+
+
 def cmd_mixshort(a):
     sr = 48000
     sh('ffmpeg', '-loglevel', 'error', '-y', '-i', a.inp, '-vn', '-ac', '1', '-ar', str(sr), '/tmp/_gf_a.wav')
@@ -213,7 +228,7 @@ def cmd_mixshort(a):
     fi = int(.4 * sr); fo = int(1.5 * sr); m[:fi] *= np.linspace(0, 1, fi); m[-fo:] *= np.linspace(1, 0, fo)
     wavfile.write('/tmp/_gf_mix.wav', sr, (_duck(x, m, sr) * 32767).astype(np.int16))
     sh('ffmpeg', '-loglevel', 'error', '-y', '-i', a.inp, '-i', '/tmp/_gf_mix.wav', '-map', '0:v', '-map', '1:a', '-c:v', 'libx264', '-crf', '20',
-       '-preset', 'medium', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '192k', '-af', 'loudnorm=I=-14:TP=-1.5', '-movflags', '+faststart', a.out)
+       '-preset', 'medium', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '192k', '-af', _ln2('/tmp/_gf_mix.wav') + ',aresample=48000', '-movflags', '+faststart', a.out)
     print('ok', a.out)
 
 
@@ -235,7 +250,7 @@ def cmd_mixlong(a):
         s2 = max(0, s - xf // 2); y = (y * r)[:N - s2]; m[s2:s2 + len(y)] += y
     wavfile.write('/tmp/_gf_mix.wav', sr, (_duck(x, m, sr) * 32767).astype(np.int16))
     sh('ffmpeg', '-loglevel', 'error', '-y', '-i', '/tmp/_gf_cat.mp4', '-i', '/tmp/_gf_mix.wav', '-map', '0:v', '-map', '1:a', '-c:v', 'copy',
-       '-c:a', 'aac', '-b:a', '192k', '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11', '-movflags', '+faststart', a.out)
+       '-c:a', 'aac', '-b:a', '192k', '-af', _ln2('/tmp/_gf_mix.wav') + ',aresample=48000', '-movflags', '+faststart', a.out)
     print('ok', a.out)
 
 

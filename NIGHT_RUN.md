@@ -10,8 +10,9 @@ cd remotion && npm ci --no-audit --no-fund && cd ..
 mkdir -p work out
 D=$(TZ=Europe/Berlin date +%Y-%m-%d)
 ```
-Python (numpy, scipy, Pillow) und ffmpeg sind vorinstalliert. Browser: `/opt/pw-browsers/...` (überschreibbar mit `GF_BROWSER`).
-Nachtnummer: `state/log.md` lesen. Langes Video, wenn die letzte Nacht keins hatte.
+Python (numpy, scipy, Pillow) und ffmpeg sind vorinstalliert. Browser: die Render-Skripte suchen `chrome-headless-shell` automatisch unter `/opt/pw-browsers/` (überschreibbar mit `GF_BROWSER`).
+Nachtnummer: `state/log.md` lesen. Langes Video, wenn die letzte Nacht keins hatte **und** `state/credits.md` einen Stand ≥ ~12.000 Credits zeigt (Connector kann das Guthaben nicht abfragen). Sonst Langvideo nur vorbereiten (Skript, Fakten, Kritik, Thumbnails), kein Audio.
+Läuft die Routine in derselben Nacht ein zweites Mal (Log hat schon einen Eintrag mit heutigem Datum): keine neuen Shorts, sondern offene Punkte aus dem Log erledigen.
 
 ## 1. Themen (Agent „Scout“, Skills: idea-generation-and-ideation, trend-jacking, tubealfred youtube-keyword-ideas wenn verbunden)
 - Websuche: deutsche Nachrichten der letzten 7 Tage zu Geld, Steuern, Rente, Bürgergeld, Arbeit, Mieten, Preise, Politiker-Aussagen mit Zahlen.
@@ -36,20 +37,23 @@ Bewertet hart nach Rubrik. **Freigabe nur bei ≥ 8/10 in jeder Kategorie.** Son
 ## 6. Stimme (ElevenLabs-Connector)
 - Voice `r8MyP4qUsq5WFFSkPdfV` (Johannes), Modell `eleven_multilingual_v2`, **generations_count: 1**.
 - Pro Short EIN Aufruf: Absätze getrennt durch `<break time="1.6s" />` (Hook ruhig als eigener Aufruf, wenn Betonung kritisch).
-- Vorher `estimate_only: true`. Budget pro Nacht max. ~3.500 Credits ohne, ~10.500 mit langem Video. Bei < 5.000 Rest-Credits: nur Shorts.
+- Vorher `estimate_only: true` (zeigt nur die Kosten, nicht das Guthaben). Budget pro Nacht max. ~3.500 Credits ohne, ~10.500 mit langem Video. Bei < 5.000 Rest-Credits: nur Shorts. Verbrauch in `state/credits.md` eintragen.
 - `creative_get_flow_run_status` pollen, `content_url` mit `curl -sS -o` laden (Link 2 h gültig).
 ```bash
-python3 tools/gf.py split work/<id> work/<id>/all.mp3 hook,b1,b2,b3,yt,tt
+python3 tools/gf.py split work/<id> work/<id>/all.mp3 hook,b1,b2,b3,yt,tt   # schneidet an den N-1 längsten Pausen; Warnung beachten
 python3 tools/gf.py voice work/<id> --tempo 1.10        # Shorts; Langvideo --tempo 1.06
 python3 tools/gf.py short work/<id> remotion s<NR> hook,b1,b2,b3
 ```
 `work/<id>/texts.json` vorher anlegen (Key → exakter gesprochener Text ohne break-Tags).
+Zahlenlastige Shorts: ≤ 100 Wörter, ausgeschriebene Zahlen sprechen lange (S10 mit 107 Wörtern = 56 s).
 
 ## 7. Animation (Regie: Hauptagent; Skill: remotion-best-practices)
-- Vorlage: `remotion/src/ch/Short8.tsx` (Aufbau, Untertitel, SFX, Enden). Neue Datei `src/ch/Short<NR>.tsx`, in `src/Root.tsx` registrieren (`Short<NR>YT`, `Short<NR>TT`).
+- Vorlage: `remotion/src/ch/Short9.tsx`–`Short11.tsx` mit Baukasten `src/ch/shortkit.tsx` (Szenenliste, Untertitel mit Zahlen-Ersetzung `["vierundsiebzig komma neun prozent","74,9 %"]`, Quellenzeile `Src`, Enden `EndYT` = „Folg Groschenfall“ wenn kein Langvideo, `EndTT` = Frage + Buttons). Ältere Vorlage `Short8.tsx` (YT-Ende mit Langvideo-Thumbnail). Neue Datei `src/ch/Short<NR>.tsx`, in `src/Root.tsx` registrieren (`Short<NR>YT`, `Short<NR>TT`).
+- Wort-Anker `wk(key, "wort", n)` sucht per Wortanfang – Falle: „zwei“ trifft „zweihundert…“. Für exakte Treffer `wk(key, "=zwei")`.
 - Erstes Bild = selbsterklärendes Titelbild, wenig Text, eine klare Illustration. Echte Personen nur stilisiert (wie `MerzBust`), nie Logos/Markenverpackungen.
 - SFX nur `soft, whoosh, stamp, ding, paper, marimba, coins` (kein „pop“).
-- Kontrolle: `node stills.mjs Short<NR>TT 0,90,...` → Kontaktbogen ansehen, Überlappungen fixen, erst dann rendern.
+- Kontrolle: `node stills.mjs Short<NR>TT 0,90,...` (ca. 20 Frames: jeder Szenenanfang + Mitte) → `python3 tools/sheet.py remotion/out/Short<NR>TT <frames> remotion/out/sheet<NR>.png` → Kontaktbogen mit Read ansehen. Prüfen: Text abgeschnitten, Überlappungen, Bild passt zum gesprochenen Wort (falscher Wort-Anker!), leere Szenen. Fixen, erst dann rendern.
+- Rendern dauert ca. 3–5 min pro Version; Stills und Mixe parallel dazu verlangsamen alles. Lange Jobs mit `nohup … &` starten und nicht `pkill -f renderall` benutzen (trifft die eigene Shell).
 ```bash
 cd remotion && node renderall.mjs Short<NR>YT Short<NR>TT && cd ..
 python3 tools/gf.py mixshort remotion/out/v4_Short<NR>YT.mp4 out/$D/Groschenfall_Short<NR>_<Slug>_YouTube.mp4
@@ -62,7 +66,7 @@ Langvideo: Kapitel als `src/v<NR>/V<NR>Ch<i>.tsx` nach Muster `src/v5/`, `gf.py 
 
 ## 9. Abliefern
 1. Alle Dateien aus `out/$D/` mit SendUserFile schicken (Videos `display: attach`).
-2. Falls der PC erreichbar ist: per `device_commit_files` nach `C:\Users\barte\Videos\Groschenfall\Nacht\<Datum>\` (vorher nach /mnt/user-data/outputs kopieren). Nicht erreichbar ist kein Fehler.
+2. Falls der PC erreichbar ist: per `device_commit_files` nach `C:\Users\barte\Videos\Groschenfall\Nacht\<Datum>\` (vorher nach /mnt/user-data/outputs kopieren). Voraussetzung: Der Ordner `Videos\Groschenfall` ist in der Sitzung verbunden (`get_device_info.connectedFolders`); nachts kann niemand eine Freigabe bestätigen. Nicht erreichbar ist kein Fehler.
 3. `state/topics_done.md` + `state/log.md` ergänzen, neue `.tsx`-Dateien und Texte committen und pushen (keine mp4/wav).
 4. Eine kurze Zusammenfassung an Jona (SendUserMessage + Push): was fertig ist, Hooks, offene Punkte.
 

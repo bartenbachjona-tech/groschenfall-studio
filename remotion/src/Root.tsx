@@ -22,6 +22,7 @@ import { V5Ch5, V5CH5_DUR } from "./v5/V5Ch5";
 import { V5Ch6, V5CH6_DUR } from "./v5/V5Ch6";
 import { V5Ch7, V5CH7_DUR } from "./v5/V5Ch7";
 import { T5A, T5B, T5C, T5D } from "./ch/Thumb5";
+import { T6A, T6B, T6C } from "./ch/Thumb6";
 import { ThumbA, ThumbB, ThumbC, ThumbD } from "./ch/Thumb";
 const V = { fps: 30, width: 1920, height: 1080 };
 export const RemotionRoot = () => (
@@ -52,6 +53,9 @@ export const RemotionRoot = () => (
     <Composition id="V5Ch5" component={V5Ch5} durationInFrames={V5CH5_DUR} {...V} />
     <Composition id="V5Ch6" component={V5Ch6} durationInFrames={V5CH6_DUR} {...V} />
     <Composition id="V5Ch7" component={V5Ch7} durationInFrames={V5CH7_DUR} {...V} />
+    <Composition id="T6A" component={T6A} durationInFrames={1} fps={30} width={1280} height={720} />
+    <Composition id="T6B" component={T6B} durationInFrames={1} fps={30} width={1280} height={720} />
+    <Composition id="T6C" component={T6C} durationInFrames={1} fps={30} width={1280} height={720} />
     <Composition id="T5D" component={T5D} durationInFrames={1} fps={30} width={1280} height={720} />
     <Composition id="T5A" component={T5A} durationInFrames={1} fps={30} width={1280} height={720} />
     <Composition id="T5B" component={T5B} durationInFrames={1} fps={30} width={1280} height={720} />
