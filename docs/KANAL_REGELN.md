@@ -23,6 +23,7 @@
 
 ## Veröffentlichung
 - Claude veröffentlicht oder plant **nie** ohne Jonas OK. Nachtläufe liefern nur Dateien + Texte.
+- **„hochladen“** (Jonas Nachricht am Morgen) = OK, die Shorts der Nacht **am selben Tag ab 17 Uhr auf YouTube, TikTok und Instagram zu terminieren** (nicht sofort veröffentlichen). Mehrere Shorts nicht gleichzeitig: am 24.10. gewählt gestaffelt 17 / 18 / 19 Uhr.
 - Lange Videos 17–18 Uhr. KI-Angabe bei YouTube: „Ja, KI verwendet“ (Stimme), veränderte Inhalte „Nein“.
 - Instagram nur normale Reels (kein Trial Reel), max. 5 Hashtags.
 - Keine Logins/Credentials eingeben, keine dauerhaften Löschungen.
