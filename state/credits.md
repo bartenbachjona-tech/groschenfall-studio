@@ -7,3 +7,4 @@ Der ElevenLabs-Connector kann das Restguthaben NICHT abfragen. Damit NIGHT_RUN Â
 | Datum | Stand laut Jona | Verbrauch Nacht | SchÃ¤tzung danach |
 |---|---|---|---|
 | 2026-10-24 | unbekannt | 2.945 (3 Shorts) | unbekannt |
+| 2026-10-25 | unbekannt | 2.693 (3 Shorts) | unbekannt |

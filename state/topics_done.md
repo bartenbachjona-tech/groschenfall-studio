@@ -13,10 +13,11 @@
 - 1.000 € mehr Gehalt – nur 59 € kommen an · Bürgergeld-Empfänger sind faul? · 4,82 €/h arbeiten?
 - In Frankreich Pflicht (Shrinkflation-Schild) · Fast 3 Wochen krank? Merz-Zitat
 - Heizöl +74,9 % – drei Nachbarn, drei Heizungen (S9, 24.10.) · Steuerpläne 2027: Wer soll mehr zahlen? (S10, 24.10.) · Diesel teurer als E10 trotz 18 ct weniger Steuer (S11, 24.10.)
+- Zuzahlungen 2027: 5 € → 7,50 € (S12, 25.10.) · Frühstart-Rente: Jahrgang 2019 geht leer aus (S13, 25.10.) · Butter −29,5 %, Einkauf trotzdem +0,4 % (S14, 25.10.)
 
 ## Ideenspeicher (vom Scout 24.10., noch offen)
 - Tankrabatt endet voraussichtlich 31.12. (+16,7 ct/l) – Enddatum/Verlängerung prüfen
 - Zusatzbeitrag Krankenkasse: offizieller Wert bis 1.11. (2,9 % „rechnerisch“; 3,13 % tatsächlich nur sekundär belegt)
 - Mindestlohn 14,60 € ab 1.1.2027 (BMAS) · Minijob-Grenze 633 € (Teaser fürs Minijob-Langvideo)
-- Frühstart-Rente (Bundestag 16.10., 10 €/Monat) – Widerspruch Alter/Jahrgänge klären
 - Pflege: Kinderlosenzuschlag +0,3 Punkte ab 2027 (Entwurf)
+- (Scout 25.10.) Deutschlandticket 66,80 € ab 2027 (Primärquelle fehlt noch) · Wohngeld: Heizkosten-Anteil halbiert (Entwurf BR-Drs. 474/26) · Beitragsbemessungsgrenzen 2027 (Kabinett 7.10.) · Netzentgelte regional (nur sekundär) · Minijob 633 € + Pauschsteuer 2→5 % (Entwurf; Teaser für V6) · Mindestlohn 14,60 € mit Auslandsvergleich
