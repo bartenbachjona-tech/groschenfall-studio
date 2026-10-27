@@ -15,6 +15,7 @@
 - Heizöl +74,9 % – drei Nachbarn, drei Heizungen (S9, 24.10.) · Steuerpläne 2027: Wer soll mehr zahlen? (S10, 24.10.) · Diesel teurer als E10 trotz 18 ct weniger Steuer (S11, 24.10.)
 - Zuzahlungen 2027: 5 € → 7,50 € (S12, 25.10.) · Frühstart-Rente: Jahrgang 2019 geht leer aus (S13, 25.10.) · Butter −29,5 %, Einkauf trotzdem +0,4 % (S14, 25.10.)
 - Tankrabatt endet 31.12. (+16,7 ct/l) (S15, 26.10.) · Pflege-Zuschlag Kinderlose 0,6→0,9 (S16, 26.10.) · Mindestlohn 14,60 € vs. Frankreich/Niederlande (S17, 26.10.)
+- Deutschlandticket 66,80 € per Formel (S18, 27.10.) · Kartoffelernte −25 %, TK-Pommes billiger (S19, 27.10.) · Tabaksteuer 2027–2030, +945 €/Jahr (S20, 27.10.)
 
 ## Ideenspeicher (vom Scout 24.10., noch offen)
 - Tankrabatt endet voraussichtlich 31.12. (+16,7 ct/l) – Enddatum/Verlängerung prüfen
@@ -23,3 +24,4 @@
 - Pflege: Kinderlosenzuschlag +0,3 Punkte ab 2027 (Entwurf)
 - (Scout 25.10.) Deutschlandticket 66,80 € ab 2027 (Primärquelle fehlt noch) · Wohngeld: Heizkosten-Anteil halbiert (Entwurf BR-Drs. 474/26) · Beitragsbemessungsgrenzen 2027 (Kabinett 7.10.) · Netzentgelte regional (nur sekundär) · Minijob 633 € + Pauschsteuer 2→5 % (Entwurf; Teaser für V6) · Mindestlohn 14,60 € mit Auslandsvergleich
 - (Scout 26.10.) Sekt-/Alkoholsteuer +20 % ab 2027 (Entwurf Drs. 21/7860; Silvester-Timing, Union dagegen) · Zuckersteuer ab 7/2027 (Sätze nur sekundär, BMF-PM prüfen) · Zusatzbeitrag 2027 (BMG-Bekanntgabe bis 1.11. abwarten) · Rentenversicherungsbericht Nov. (Rentenerhöhung 2027) · Tankrabatt-Short ggf. Mitte Dezember neu aufgreifen (Spritpreisdeckel?)
+- (Scout 27.10.) Zusatzbeitrag 2027: Schätzerkreis 2,9 % (BAS/BMG 14.10.), offizielle BMG-Bekanntgabe bis 1.11. → ab 1.11. produzieren (Score 10/10; 3,13 % tatsächlich 2026 nur sekundär) · Inflation Oktober (Destatis 30.10.; Sept. 3,3 %, Großhandel +8,7 %) · Holzpellets/Scheitholz Erzeugerpreise +38,5 % (Sept.) · Elterngeld 1.800 € seit 2007 (Reform-Entwurf) · Sekt-/Alkoholsteuer 136→163 €/hl (für Dezember) · Beitragsbemessungsgrenzen 2027 (BR steht aus) · Wohngeld Heizkosten (Anhörung 4.11.)

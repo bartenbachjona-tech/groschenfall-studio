@@ -19,6 +19,9 @@ import { Short14YT, Short14TT, S14_DUR } from "./ch/Short14";
 import { Short15YT, Short15TT, S15_DUR } from "./ch/Short15";
 import { Short16YT, Short16TT, S16_DUR } from "./ch/Short16";
 import { Short17YT, Short17TT, S17_DUR } from "./ch/Short17";
+import { Short18YT, Short18TT, S18_DUR } from "./ch/Short18";
+import { Short19YT, Short19TT, S19_DUR } from "./ch/Short19";
+import { Short20YT, Short20TT, S20_DUR } from "./ch/Short20";
 import { V5Ch0, V5CH0_DUR } from "./v5/V5Ch0";
 import { V5Ch1, V5CH1_DUR } from "./v5/V5Ch1";
 import { V5Ch2, V5CH2_DUR } from "./v5/V5Ch2";
@@ -63,6 +66,12 @@ export const RemotionRoot = () => (
     <Composition id="Short16TT" component={Short16TT} durationInFrames={S16_DUR.tt} fps={30} width={1080} height={1920} />
     <Composition id="Short17YT" component={Short17YT} durationInFrames={S17_DUR.yt} fps={30} width={1080} height={1920} />
     <Composition id="Short17TT" component={Short17TT} durationInFrames={S17_DUR.tt} fps={30} width={1080} height={1920} />
+    <Composition id="Short18YT" component={Short18YT} durationInFrames={S18_DUR.yt} fps={30} width={1080} height={1920} />
+    <Composition id="Short18TT" component={Short18TT} durationInFrames={S18_DUR.tt} fps={30} width={1080} height={1920} />
+    <Composition id="Short19YT" component={Short19YT} durationInFrames={S19_DUR.yt} fps={30} width={1080} height={1920} />
+    <Composition id="Short19TT" component={Short19TT} durationInFrames={S19_DUR.tt} fps={30} width={1080} height={1920} />
+    <Composition id="Short20YT" component={Short20YT} durationInFrames={S20_DUR.yt} fps={30} width={1080} height={1920} />
+    <Composition id="Short20TT" component={Short20TT} durationInFrames={S20_DUR.tt} fps={30} width={1080} height={1920} />
     <Composition id="V5Ch0" component={V5Ch0} durationInFrames={V5CH0_DUR} {...V} />
     <Composition id="V5Ch1" component={V5Ch1} durationInFrames={V5CH1_DUR} {...V} />
     <Composition id="V5Ch2" component={V5Ch2} durationInFrames={V5CH2_DUR} {...V} />
