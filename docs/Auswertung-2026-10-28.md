@@ -64,3 +64,20 @@ Muster:
 
 ## 4. Maßnahmen
 Siehe `docs/AUSWERTUNG_AKTUELL.md` (M1 erste Sekunde, M2 Nutzwert + suchbar, M3 Serien-Rahmen + Teilen).
+
+## 5. Konkurrenz YouTube (yt-dlp-Listen, RSS, Apify-Transkripte, 27.10.)
+| Kanal | Abos | Median Shorts / Lang | Stärkster Ausreißer |
+|---|---|---|---|
+| Simplicissimus | 2,6 Mio. | – / 1,85 Mio. | AfD-regiert 5,8 Mio. |
+| Finanzfluss | 1,66 Mio. | 37k / 192k | MSCI World Worst Case 925k |
+| Finanztip | 590k | 20k / 86k | Altersvorsorgedepot vs. ETF 356k |
+| FinanzNerd | 394k | 30k / 112k | Konto: das passiert am 30.09. 1,06 Mio. (9×) |
+| GegenHartz | 281k | 39k / 106k | Krankenkassen-Reform Rentner 619k |
+| VerpackungsProf | 39,6k | 19,5k / 36,5k | Milka-Mogelpackung 2,37 Mio. (118×) |
+| Geschichtenladen (KI-animiert) | 8,7k | 5,3k | Auswanderer 412k (78×) |
+| Was das Amt dir nicht sagt | 10,9k | 7,3k | „3 Sätze beim Jobcenter“ 177k (24×) |
+| Deutsche Lebensmittelwahrheit | 830 | – / 459 | Aldi Ferrex 93k (202×) |
+| Fakt & Folge (KI, breite Themen, 3,75/Tag) | 336 | 1,3k | – |
+| Wirtschaft – Animiert Kapiert (Lehrbuch) | 3,3k | – / 2,95k | inaktiv |
+Muster: Satz 1 enthält Name (Marke/Behörde/Politiker) oder Betrag + Betroffenheit; YouTube-Titel = erster Satz; starke YT-Shorts 35–81 s bei 2,2–3,4 Wörtern/s; feste Formate (Monatsupdate, „Mogelpackung des Monats“); Simplicissimus-Thumbnails: ein Symbol, dunkler Grund, rote Akzente, ≤ 2 Wörter; Cold Open ohne Begrüßung. Gegenbeleg: sauberer Zahl-Hook ohne Betroffenheit bleibt klein (Fakt & Folge). Lehrbuch-Erklären und breite Themenmischung schwach.
+Hinweis Länge: YouTube-Konkurrenz-Gewinner sind eher 40–70 s, unsere eigenen Daten (Ø 11 s Wiedergabe TikTok, 55 % vs. 49 % Durchsicht bei 32 vs. 48 s) sprechen derzeit für 28–40 s. Bleibt Testvariable: sobald Ø-Wiedergabe ≥ 14 s erreicht ist, längere Variante (45–60 s) testen.
