@@ -19,14 +19,14 @@ Läuft die Routine in derselben Nacht ein zweites Mal (Log hat schon einen Eintr
 ## 1. Themen (Agent „Scout“, Skills: idea-generation-and-ideation, trend-jacking, tubealfred youtube-keyword-ideas wenn verbunden)
 - Websuche: deutsche Nachrichten der letzten 7 Tage zu Geld, Steuern, Rente, Bürgergeld, Arbeit, Mieten, Preise, Politiker-Aussagen mit Zahlen.
 - `state/topics_done.md` lesen, keine Wiederholungen.
-- 10 Kandidaten, jeder mit Scoring nach PLAYBOOK §1. Nur Themen mit **Score ≥ 8/10** und belegbaren Primärquellen.
+- 10 Kandidaten, jeder mit Scoring nach PLAYBOOK §1 **und** Themenfilter M2 (Nutzwert-Frage + Suchwort) aus `docs/AUSWERTUNG_AKTUELL.md`. Nur Themen mit **Score ≥ 8/10** und belegbaren Primärquellen.
 - Langes Video: Thema muss zum Shorts-Publikum passen (siehe Kanal-Analyse); bevorzugt das Thema der stärksten Shorts der Vorwoche vertiefen. Sonntag: der 17-Uhr-Short ist Teaser aufs Langvideo („heute 18 Uhr“); Montag: ein Short verweist darauf („Ähnliches Video“ setzen).
 
 ## 2. Hooks (Agent „Hook“, Skill: hook-writer)
-Pro Short 5 Hook-Varianten (gesprochen + Text im Bild), dann die beste nach PLAYBOOK §2. Muster, die bei uns funktioniert haben: Auslandsvergleich („In Frankreich …“), persönlich mit Zahl („Früher 5, heute 2 – einer davon bist du“), wörtliches Politiker-Zitat mit Kontext. Schwach: abstrakte Zahlen ohne „du“.
+Pro Short 5 Hook-Varianten (gesprochen + Text im Bild), dann die beste nach PLAYBOOK §2. Muster, die bei uns funktioniert haben: Auslandsvergleich („In Frankreich …“), persönlich mit Zahl („Früher 5, heute 2 – einer davon bist du“), wörtliches Politiker-Zitat mit Kontext. Schwach: abstrakte Zahlen ohne „du“, Nachrichten-Schlagzeilen („X steigt ab Januar“). Seit 28.10. Pflicht: Regeln M1 in `docs/AUSWERTUNG_AKTUELL.md` (Satz 1, Bild 1, Ton ab 0,2 s). Stärkster Treffer bisher: Identitäts-Hook „Drei Nachbarn, drei Heizungen – welcher bist du?“ (TikTok 8.831).
 
 ## 3. Skript (Agent „Autor“, Skills: short-form-video-script / youtube-long-form, storytelling-and-narrative)
-- Short: 90–120 Wörter, 35–45 s; Absätze als Keys `hook, b1, b2, b3[, b4]`, Enden `yt` (Verweis aufs lange Video, wenn vorhanden, sonst „Folg Groschenfall für mehr“) und `tt` (Kommentarfrage).
+- Short: 28–40 s, ≤ 90 Wörter, eine Kernzahl (AUSWERTUNG_AKTUELL M1); Absätze als Keys `hook, b1, b2, b3[, b4]`, Enden `yt` (Verweis aufs lange Video, wenn vorhanden, sonst „Folg Groschenfall für mehr“) und `tt` (Kommentarfrage).
 - Langvideo: ~1.400–1.550 Wörter (≈ 10 min bei Tempo 1,06), Kapitel 0–7, alle ~60–90 s ein neuer Reiz (offene Frage, Wendung, Zahl mit „du“), Format wie `docs/Video05-Krankschreibung-Skript.md`.
 - Zahlen für die Stimme ausschreiben („zweitausendzweiundzwanzig“).
 
