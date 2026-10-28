@@ -33,7 +33,7 @@ Gilt ab dem Nachtlauf 28.10.2026 und geht PLAYBOOK §2/§3/§9 vor, wo sie sich 
 - Messziel: TikTok-Share-Rate ≥ 0,6 %; Langvideo-Klickrate ≥ 4 %.
 
 ## Festgelegte Abschlusszeile
-(vom Nachtlauf 28.10. eintragen)
+**„Groschenfall. Geld, endlich klar.“** (festgelegt im Nachtlauf 28.10.2026; Vorschläge: „Groschenfall – damit der Groschen fällt.“ 40 Zeichen · „Groschenfall. Jetzt fällt der Groschen.“ 39 · „Groschenfall. Geld, endlich klar.“ 33 → kürzester gewinnt). Gesprochen am Ende von `yt` und `tt`, im Bild als `CLOSING` in `shortkit.tsx` (`EndShare` = TikTok-Ende mit Teilen-Satz, `EndYT line={CLOSING}`). Nie mehr ändern.
 
 ## Nächste Auswertung
 Bei „Auswertung bitte“: diese Messziele prüfen, Maßnahmen behalten/ersetzen.
