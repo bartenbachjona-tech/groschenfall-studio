@@ -8,6 +8,8 @@ Terminierung (Nachtlauf, §9a): beide Shorts **heute** auf YouTube, TikTok, Inst
 | **19:00** | S24 Mogelpackung Ültje (X gegen Y) | `Groschenfall_Short24_Mogelpackung-Ueltje_YouTube.mp4` | `Groschenfall_Short24_Mogelpackung-Ueltje_TikTok-Insta.mp4` | R2 FREIGABE Ø 8,5 (Hook 9) |
 
 S24 auf 19:00, weil höherer Hook-Score (§9a).
+
+**Terminiert (geprüft):** YouTube S23 17:00 https://youtube.com/shorts/slTySp3N7rc · S24 19:00 https://youtube.com/shorts/0m7lDWb1FHY · TikTok S23 17:00, S24 19:00 · Instagram NICHT (Meta Business Suite nicht eingeloggt).
 „Ähnliches Video“ (YouTube): S23 → S21 „Krankenkasse zu teuer?“ (Frist-Serie) · S24 → S14 „Butter −29,5 %“ (Preise).
 
 ---
