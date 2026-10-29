@@ -11,3 +11,4 @@ Der ElevenLabs-Connector kann das Restguthaben NICHT abfragen. Damit NIGHT_RUN Â
 | 2026-10-26 | unbekannt | 2.672 (3 Shorts) | unbekannt |
 | 2026-10-27 | unbekannt | 2.653 (3 Shorts) | unbekannt |
 | 2026-10-28 | unbekannt | 1.642 (2 Shorts: 776 + 866) | unbekannt |
+| 2026-10-29 | unbekannt | 11.653 (2 Shorts: 789 + 819; Langvideo V7 alle 8 Kapitel: 10.045) | unbekannt |

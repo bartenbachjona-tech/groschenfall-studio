@@ -137,3 +137,26 @@ Startwerte nach Aufnahme = Summe der echten Kapitel-Längen. Ducking/Loudness na
 - `"Sicher"` in 6.1: erster Treffer in `v7_6_0` ist „Sicher ist“ ✓; in 7.2 erster Treffer in `v7_7_1` ✓.
 - Kontaktbogen: Frame 0 (M1: Figur + großer Betrag in Bernstein, ≤ 5 Wörter), jeder Szenenanfang.
 - Quellenzeilen: BA Juli 2026 · Minijob-Zentrale QB II/2026, 07.10.2026, 01.10.2026 · BGBl. 2026 I Nr. 228 · BT-Drs. 21/8235 · BR-Drs. 507/1/26 · BMAS 23.06.2026 · Bundesregierung FAQ 02.07.2026 · hib 715/2026 · IAB 2021 · § 32a / § 40 EStG · Verbändebrief 09.07.2026 · DRV 05.06.2026 · Tageskarte/hogapage 22./23.06.2026.
+
+---
+
+## Stand 29.10.: Kapitel 0–2 animiert
+Dateien: `remotion/src/v7/kit7.tsx` (Baukasten für alle Kapitel: `mk7` mit `wk(key,"wort")`/`"=wort"`, `Scenes7`, `V7Shell`, Figuren Lena/Toni/Klaus/Sandra/Du/Suit/NamedBust, `LowerThird` „Beispielfigur“, `Src`, Requisiten Pub/BarWall/Bakery/Checkout/Paper/Row/Calc/Pot/Card3/Form/Report/Building/Tag/Scale/Bubble/Coins/StepRamp …), `V7Ch0.tsx`, `V7Ch1.tsx`, `V7Ch2.tsx`; registriert in `src/Root.tsx` als `V7Ch0–2`. Alle Wort-Anker gegen `v7ch0–2.json` geprüft (kein MISSING). Kontaktbögen: `remotion/out/sheetV7Ch0.png`, `sheetV7Ch1.png`, `sheetV7Ch2.png`. Nicht gerendert.
+
+Echte Kapitel-Längen: Ch0 41,16 s · Ch1 63,65 s · Ch2 81,83 s → Ch1 startet bei 41,2 s, Ch2 bei 104,8 s (Musik `music_k23` also bei **104,8 s** statt 105).
+
+Szenen-Startzeiten (Sekunden ab Kapitelanfang, = Wort-Anker minus 0,1–0,3 s Vorlauf):
+| Kap. 0 | 0.1 0,0 · 0.2 4,7 · 0.3 10,6 · 0.4 14,0 · 0.5 19,5 · 0.6 24,9 · 0.7 30,0 · 0.8 32,6 |
+|---|---|
+| **Kap. 1** | 1.1 0,0 · 1.2 11,0 · 1.3 20,4 · 1.4 27,0 · 1.5 29,8 · 1.6 32,7 · 1.7 40,2 · 1.8 45,9 · 1.9 50,4 · 1.10 53,2 · 1.11 59,9 |
+| **Kap. 2** | 2.1 0,0 · 2.2 9,6 · 2.3 16,4 · 2.4 21,1 · 2.5 25,8 · 2.6 33,0 · 2.7 37,3 · 2.8 48,7 · 2.9 57,8 · 2.10 60,4 · 2.11 62,2 · 2.12a 75,5 · 2.12b 78,5 |
+
+Abweichungen vom Plan: 0.5 „+57 €“ als „rund +57 € Abgaben“ (Update 29.10.), Stempel „Entwurf“ zuerst, „Gesetz“ auf dem Wort „Gesetz“. 1.4 startet bei `"=so"` („So wie rund vier von fünf“), sonst nur 1,5 s sichtbar; 1.5 bei `"Merk"`+4 Frames. 1.6 startet am Absatzanfang (Lena in der Menge), Zahl bei `"=sieben"`. 1.8 Anker `"=über"` statt `"älter"` (bild­synchron zu „über eine Million“). 2.3 Anker `"Fall"`, Absatzanfang „Rechnen wir …“ bleibt auf Szene 2.2 (Karte „Sicher“ sonst nur 0,5 s). 2.9 beginnt 0,9 s vor „neunzehn“. 2.12 geteilt: Du-Figur „Für dich: wenig“ → harter Schnitt Toni bei `"Toni"`. 2.6 zeigt exakte Werte 40,2 h → 42,2 h. Zöllick nur als Sprechblase „„… eine Katastrophe““ + Namensschild, kein Porträt.
+
+Offene Punkte:
+- Untertitel wie V5 nicht eingebrannt (SRT per `gf.py srt`); wichtige Bildtexte liegen oberhalb y = 950.
+- Sa 31.10.: Zusatzbeitrag 2027 (U1/U3) prüfen – bei Z ≥ 3,1 % Bild 0.5 „rund +57 €“ ggf. auf 58 € ändern; BA-Zahl 30.10. (1.6, „im Juli“ bleibt richtig).
+- 2.11: Midijob-Obergrenze 2.000 € für 2027 laut Faktenblatt A13 nicht separat geprüft ⚠.
+- 0.7: Gasthaus-Szene eher schlicht; 0.4/0.5 Toni steht vor statt hinter der Theke (optisch ok).
+- Erste ~0,5 s jeder Szene teils noch ohne Schlagzeile (Text kommt auf dem Wort) – gewollt.
+- Kapitel 3–7 (Fr/Sa) nutzen `kit7` (Building, Tag, Scale, Report, NamedBust, Suit vorhanden).

@@ -121,7 +121,7 @@ Für die meisten Minijobber ändert sich also wenig. Für Toni dagegen ändert s
 ## Kapitel 3: Toni zahlt mehr – der leise Umbau (ca. 1:07) – NEU
 [Bild: Balken „Abgaben pro vollem Minijob“: heute „≈ 188 €“. Topf „Krankenkasse“ wächst 13 % → 17,5 %, Stempel „Gesetz“ (Minze). Quelle: Minijob-Zentrale, Stand 01.10.2026; BGBl. 2026 I Nr. 228.]
 
-Toni zahlt heute für einen vollen Minijob knapp hundertneunzig Euro Abgaben im Monat. Ab Januar steigt zuerst der Anteil für die Krankenkasse, von dreizehn auf rund siebzehneinhalb Prozent. Das Gesetz dazu ist seit Juli verkündet.  `v7_3_0`
+Toni zahlt heute für einen vollen Minijob knapp hundertneunzig Euro Abgaben im Monat. Ab Januar steigt zuerst der Anteil für die Krankenkasse, von dreizehn auf rund siebzehneinhalb Prozent. Der genaue Wert hängt am durchschnittlichen Zusatzbeitrag der Krankenkassen. Das Gesetz dazu ist seit Juli verkündet.  `v7_3_0`
 
 [Bild: Topf „Steuer“ wächst 2 % → 5 %, Stempel „Entwurf“ (Bernstein). Kalender: „Gesetzentwurf Sept. 2026“ → „Bundestag berät“. Quelle: BR-Drs. 507/26, BT-Drs. 21/8235.]
 
@@ -129,11 +129,11 @@ Dazu kommt die Pauschalsteuer. Die Bundesregierung will sie von zwei auf fünf P
 
 [Bild: Balken wächst auf „≈ 245 €“, Differenz „+57 €“ leuchtet, teilt sich: schmaler Streifen „mehr Lohn ≈ 9 €“, breiter Streifen „höhere Sätze ≈ 47 €“. Gestrichelter Zusatz „Pflege ab 2028? (Entwurf)“. Fußnote: „eigene Rechnung, Umlagen wie 2026“.]
 
-Kommt beides, zahlt Toni bei sechshundertdreiunddreißig Euro rund zweihundertfünfundvierzig Euro Abgaben. Siebenundfünfzig Euro mehr als heute. Ein kleiner Teil davon kommt daher, dass Lena mehr verdient. Der große Teil sind die höheren Sätze. Und laut einem weiteren Entwurf käme ab zweitausendachtundzwanzig noch ein Beitrag zur Pflegeversicherung dazu.  `v7_3_2`
+Kommt beides, zahlt Toni bei sechshundertdreiunddreißig Euro rund zweihundertfünfundvierzig Euro Abgaben. Rund siebenundfünfzig Euro mehr als heute. Ein kleiner Teil davon kommt daher, dass Lena mehr verdient. Der große Teil sind die höheren Sätze. Und laut einem weiteren Entwurf käme ab zweitausendachtundzwanzig noch ein Beitrag zur Pflegeversicherung dazu.  `v7_3_2`
 
 [Bild: Bundesrats-Saal stilisiert (kein Logo), Dokument „Empfehlung der Ausschüsse“, Zeile „Artikel 1 Nummer 7 ist zu streichen.“ Zitat-Tafel. Quelle: BR-Drs. 507/1/26, 05.10.2026.]
 
-Widerstand kommt auch aus den Ländern. Der Wirtschaftsausschuss des Bundesrats hat empfohlen, die höhere Pauschalsteuer zu streichen. Minijobs stellen, Zitat, für viele Branchen ein wichtiges Instrument dar.  `v7_3_3`
+Selbst im Bundesrat gab es Widerstand. Sein Wirtschaftsausschuss hat empfohlen, die höhere Pauschalsteuer zu streichen. Minijobs stellen, Zitat, für viele Branchen ein wichtiges Instrument dar.  `v7_3_3`
 
 [Bild: Großes Schild „MINIJOB“ wird nicht abgerissen, sondern Stück für Stück mit Preisschildern beklebt. Dann fällt ein dicker Bericht ins Bild.]
 
@@ -233,3 +233,6 @@ Groschenfall. Geld, endlich klar.  `v7_7_3`
 - **Fairness:** Contra = Zöllick (wörtlich, als dpa-Zitat markiert) + Bundesrats-Wirtschaftsausschuss (wörtlich, Primärquelle); Pro = BMAS (wörtlich) + IAB + Bundesregierung. CSU-Position nur als Medienbericht gekennzeichnet, kein Zitat.
 - **Wenn der Bundestag die Pauschsteuer vor Sonntag ändert/beschließt:** `v7_3_1`, `v7_6_1`, `v7_2_4`, `v7_0_1` anpassen (Faktenblatt D).
 - **Wenn die BMG-Bekanntmachung zum Zusatzbeitrag 2027 ≠ 2,9 % ist:** „siebzehneinhalb“ und „245 €/57 €“ neu rechnen (Faktenblatt A6/A9).
+
+
+> Update 29.10.2026 (Faktenprüfer vor Aufnahme): v7_3_0 Zusatzbeitrag-Satz ergänzt, v7_3_2 „Rund siebenundfünfzig“, v7_3_3 Bundesrat-Satz präzisiert (Wirtschaftsausschuss, nicht Plenum).
