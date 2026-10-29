@@ -25,5 +25,5 @@
 - Claude veröffentlicht **nie sofort**. Seit 24.10.2026 (Jonas Entscheidung) **terminiert der Nachtlauf freigegebene Shorts selbst** für denselben Tag auf YouTube, TikTok und Instagram; seit 28.10.2026: **2 Shorts pro Tag um 17:00 und 19:00**. Jona kann bis 17 Uhr stoppen. Langvideos werden nie automatisch terminiert.
 - **„hochladen“** (Jonas Nachricht am Morgen) = OK, die Shorts der Nacht **am selben Tag ab 17 Uhr auf YouTube, TikTok und Instagram zu terminieren** (nicht sofort veröffentlichen). Seit 28.10.: 17:00 und 19:00.
 - Lange Videos: **eins pro Woche, ~10 Minuten, Sonntag 18:00** (seit 28.10.2026). KI-Angabe bei YouTube: „Ja, KI verwendet“ (Stimme), veränderte Inhalte „Nein“.
-- Instagram nur normale Reels (kein Trial Reel), max. 5 Hashtags.
+- Instagram: **pausiert seit 29.10.2026** (Jonas Entscheidung). Falls wieder aktiv: nur normale Reels (kein Trial Reel), max. 5 Hashtags.
 - Keine Logins/Credentials eingeben, keine dauerhaften Löschungen.
