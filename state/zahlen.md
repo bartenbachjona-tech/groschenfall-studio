@@ -10,3 +10,8 @@ Jeder Abruf hängt einen Block an; Vergleich immer mit dem Block von vor ~2 Tage
 - YouTube: 28 Abos (+1) · 28 Tage 22.737 Aufrufe, 90 h Wiedergabe · S18 Deutschlandticket 516, S20 Tabak 353, S19 Kartoffel 221 (je ~16 h alt) · S15–S17 ~1.210–1.240 (Plateau) · S21/S22 geplant 17/19 Uhr
 - TikTok: 16 Follower (±0) · 7 Tage 13,3k (TikTok-Daten noch Stand gestern) · Mindestlohn 806 (vorher 373, legt nach) · Deutschlandticket 327, Kartoffel 267, Tabak 247 · Heizöl 8,9k · S21/S22 geplant
 - Instagram: weiter nicht gepostet/messbar
+
+## 2026-10-29 23:45 (Auswertung, öffentliche Zahlen – Studio nicht zugänglich)
+- YouTube: 29 Abos (+1) · 25.306 Aufrufe gesamt · S21 237, S22 234 (~30 h) · S23 500 (6,5 h), S24 144 (4,5 h) · S18 557, S20 390, S19 245 · S15–S17 1.200–1.300
+- TikTok: 19 Follower (+3) · S21 258, S22 278, S23 272, S24 228 · Mindestlohn 1.895 · Shares S21–S24: 0
+- Instagram: weiter nicht gepostet/messbar

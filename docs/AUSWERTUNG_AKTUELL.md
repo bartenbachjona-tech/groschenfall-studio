@@ -35,5 +35,10 @@ Gilt ab dem Nachtlauf 28.10.2026 und geht PLAYBOOK §2/§3/§9 vor, wo sie sich 
 ## Festgelegte Abschlusszeile
 **„Groschenfall. Geld, endlich klar.“** (festgelegt im Nachtlauf 28.10.2026; Vorschläge: „Groschenfall – damit der Groschen fällt.“ 40 Zeichen · „Groschenfall. Jetzt fällt der Groschen.“ 39 · „Groschenfall. Geld, endlich klar.“ 33 → kürzester gewinnt). Gesprochen am Ende von `yt` und `tt`, im Bild als `CLOSING` in `shortkit.tsx` (`EndShare` = TikTok-Ende mit Teilen-Satz, `EndYT line={CLOSING}`). Nie mehr ändern.
 
+## Stand Auswertung 29.10.2026 (M1–M3 bleiben unverändert)
+- Erst 2 Tage Daten, Studio-Zugang fehlte → kein Tausch. 7-Tage-Entscheid frühestens 04.11.; ohne wiederhergestellten Studio-Zugang (Ø-Wiedergabe, „bis zum Ende“) wird er verschoben.
+- Vergleiche ab jetzt nur noch als **Aufrufe nach ~24 h und ~72 h** (Alter immer mitschreiben), nie Videos unterschiedlichen Alters direkt.
+- **Vorgemerkter nächster Einzeltest (NICHT aktiv, erst nach dem 7-Tage-Entscheid ab 04.11. und nur, wenn eine Maßnahme ersetzt wird):** „Welcher Typ bist du / X gegen Y“ als Standardformat für jeden zweiten Short. Belege bisher: Heizöl 8,9k (einziger Ausreißer), S23 Typklassen bester Frühstart (YT 500 in 6,5 h, TikTok 3,3 % Likes vs. 0–0,4 % bei S21/S22), Konkurrent @dergeldwolf postet fast nur „X vs Y“ (29k–127k).
+
 ## Nächste Auswertung
 Bei „Auswertung bitte“: diese Messziele prüfen, Maßnahmen behalten/ersetzen.
