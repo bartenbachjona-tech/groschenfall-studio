@@ -173,7 +173,7 @@ export const EndTT: React.FC<{ f: number; at: number; q: [string, string]; opts:
 export const CLOSING = "Geld, endlich klar.";
 
 /** Ende TikTok/Insta ab S21: Teilen-Aufforderung + feste Abschlusszeile */
-export const EndShare: React.FC<{ f: number; at: number; who: [string, string]; closeAt: number }> = ({ f, at, who, closeAt }) => {
+export const EndShare: React.FC<{ f: number; at: number; who: [string, string]; closeAt: number; lead?: [string, string] }> = ({ f, at, who, closeAt, lead = ["Schick das an", "jemanden, der"] }) => {
   const ic = pop(f, at + 6, 16);
   const k = f - closeAt;
   const drop = interpolate(k, [0, 22], [-200, 1130], { ...CL, easing: Easing.bounce });
@@ -183,8 +183,8 @@ export const EndShare: React.FC<{ f: number; at: number; who: [string, string]; 
         <circle r={90} fill={C.amber} />
         <path d="M -38 30 L -38 -6 Q -38 -34 -6 -34 L 22 -34 L 22 -62 L 64 -18 L 22 26 L 22 -2 L -6 -2 Q -10 -2 -10 4 L -10 30 Z" fill="#0A111D" />
       </g>
-      <Txt x={540} y={540} s={80} o={tw(f, at, 12)}>Schick das an</Txt>
-      <Txt x={540} y={640} s={80} o={tw(f, at + 3, 12)}>jemanden, der</Txt>
+      <Txt x={540} y={540} s={80} o={tw(f, at, 12)}>{lead[0]}</Txt>
+      <Txt x={540} y={640} s={80} o={tw(f, at + 3, 12)}>{lead[1]}</Txt>
       <Txt x={540} y={770} s={74} c={C.amber} o={tw(f, at + 8, 12)}>{who[0]}</Txt>
       <Txt x={540} y={865} s={74} c={C.amber} o={tw(f, at + 10, 12)}>{who[1]}</Txt>
       {f >= closeAt - 2 && (

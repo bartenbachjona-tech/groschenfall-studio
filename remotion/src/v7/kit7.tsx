@@ -473,3 +473,62 @@ export const BarWall: React.FC<{ shelfX?: number; counterY?: number }> = ({ shel
     {Array.from({ length: 8 }).map((_, i) => <rect key={i} x={40 + i * 240} y={counterY + 80} width={200} height={1080 - counterY - 140} rx={12} fill="#4A2F22" />)}
   </g>
 );
+
+/* ---------- Ergänzungen 30.10. (Kap. 3–5, wiederverwendbar in 6–7) ---------- */
+/** Straßenschild „MINIJOB“ am Pfosten; tags = [Text, Startframe, Farbe?] werden schräg aufgeklebt */
+export const MinijobSign: React.FC<{ f: number; x: number; y: number; s?: number; tags?: [string, number, string?][]; cross?: number }> = ({ f, x, y, s = 1, tags = [], cross = 0 }) => (
+  <g transform={`translate(${x} ${y}) scale(${s})`}>
+    <rect x={-14} y={0} width={28} height={420} rx={8} fill="#5A6B88" />
+    <rect x={-330} y={-170} width={660} height={190} rx={22} fill="#EEF2F7" stroke="#2A3F63" strokeWidth={10} />
+    <text y={-40} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={120} fill="#0A111D" letterSpacing={4}>MINIJOB</text>
+    {cross > 0 && <g stroke={C.red} strokeWidth={18} strokeLinecap="round" opacity={0.85}><line x1={-300} y1={-150} x2={-300 + 600 * Math.min(1, cross * 2)} y2={-150 + 160 * Math.min(1, cross * 2)} /><line x1={300} y1={-150} x2={300 - 600 * Math.max(0, cross * 2 - 1)} y2={-150 + 160 * Math.max(0, cross * 2 - 1)} /></g>}
+    {tags.map(([t, at, col], i) => {
+      if (f < at) return null;
+      const k = interpolate(f, [at, at + 8], [0, 1], CL);
+      const pos = [[-250, -175, -14], [150, -190, 10], [-60, 30, -6], [250, 20, 14]][i % 4];
+      return <g key={i} opacity={k}><Tag x={pos[0]} y={pos[1]} r={pos[2]} s={lerp(1.8, 1, k)} text={t} col={col ?? C.amber} /></g>;
+    })}
+  </g>
+);
+/** Schüler/in mit Ranzen (Kind, kleiner) */
+export const Kid: React.FC<P7> = (p) => (
+  <g>
+    <Acc p={p}>
+      <rect x={-70} y={60} width={44} height={150} rx={14} fill="#E07A3F" />
+      <rect x={-78} y={70} width={60} height={110} rx={16} fill="#F0A35E" />
+    </Acc>
+    <Figure {...p} shirt="#3DDC97" sleeve="#7FE8BC" hair="#5B3A29" hairStyle={0} />
+    <Acc p={p}><path d="M -46 44 L -40 160" stroke="#B5552F" strokeWidth={12} strokeLinecap="round" /></Acc>
+  </g>
+);
+/** Kreisdiagramm (Ring) mit Anteil p 0..1 und Wert in der Mitte */
+export const Donut: React.FC<{ x: number; y: number; r?: number; p: number; col?: string; val?: string; label?: string }> = ({ x, y, r = 200, p, col = C.amber, val, label }) => {
+  const c = 2 * Math.PI * r;
+  return (
+    <g transform={`translate(${x} ${y})`}>
+      <circle r={r} fill="none" stroke="#22304A" strokeWidth={r * 0.32} />
+      <circle r={r} fill="none" stroke={col} strokeWidth={r * 0.32} strokeDasharray={`${c * p} ${c}`} transform="rotate(-90)" />
+      {val && <Tx x={0} y={r * 0.18} s={r * 0.42} c={C.white}>{val}</Tx>}
+      {label && <Tx x={0} y={r + r * 0.5} s={40} c={C.gray} w={700}>{label}</Tx>}
+    </g>
+  );
+};
+/** Briefumschlag mit Blatt (open 0..1 zieht das Blatt heraus) */
+export const Letter: React.FC<{ x: number; y: number; s?: number; r?: number; open?: number; title?: string }> = ({ x, y, s = 1, r = 0, open = 0, title }) => (
+  <g transform={`translate(${x} ${y}) rotate(${r}) scale(${s})`}>
+    <rect x={-180} y={-120 - 200 * open} width={360} height={260} rx={10} fill="#F4F6FA" />
+    {title && <text x={0} y={-60 - 200 * open} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={30} fill="#0A111D">{title}</text>}
+    {[0, 1, 2].map((i) => <rect key={i} x={-140} y={-30 - 200 * open + i * 34} width={i === 2 ? 160 : 280} height={10} rx={5} fill="#0A111D" opacity={0.18} />)}
+    <rect x={-220} y={-10} width={440} height={260} rx={14} fill="#C9D3E2" />
+    <path d="M -220 -6 L 0 130 L 220 -6" fill="none" stroke="#9AA8BF" strokeWidth={8} />
+  </g>
+);
+/** Dunkle Hintertür, einen Spalt offen (open 0..1) */
+export const Door: React.FC<{ x: number; y: number; s?: number; open?: number }> = ({ x, y, s = 1, open = 0 }) => (
+  <g transform={`translate(${x} ${y}) scale(${s})`}>
+    <rect x={-200} y={-460} width={400} height={480} fill="#0A111D" />
+    <path d={`M -200 -460 L ${-200 + 400 * (1 - 0.35 * open)} ${-460 + 30 * open} L ${-200 + 400 * (1 - 0.35 * open)} ${20 - 30 * open} L -200 20 Z`} fill="#22304A" stroke="#2A3F63" strokeWidth={8} />
+    <circle cx={-200 + 400 * (1 - 0.35 * open) - 40} cy={-210} r={14} fill={C.amber} opacity={0.7} />
+    <rect x={-230} y={-490} width={460} height={30} fill="#2A3F63" />
+  </g>
+);

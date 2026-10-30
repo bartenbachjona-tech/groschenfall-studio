@@ -160,3 +160,29 @@ Offene Punkte:
 - 0.7: Gasthaus-Szene eher schlicht; 0.4/0.5 Toni steht vor statt hinter der Theke (optisch ok).
 - Erste ~0,5 s jeder Szene teils noch ohne Schlagzeile (Text kommt auf dem Wort) – gewollt.
 - Kapitel 3–7 (Fr/Sa) nutzen `kit7` (Building, Tag, Scale, Report, NamedBust, Suit vorhanden).
+
+---
+
+## Stand 30.10.: Kapitel 3–5 animiert
+Dateien: `remotion/src/v7/V7Ch3.tsx`, `V7Ch4.tsx`, `V7Ch5.tsx` (Exporte `V7Ch3`/`V7CH3_DUR` …), registriert in `src/Root.tsx` als `V7Ch3–5`. `kit7.tsx` nur ergänzt (am Ende, „Ergänzungen 30.10.“): `MinijobSign` (Schild MINIJOB mit aufgeklebten Preisschildern + optionalem roten X – für 7.3 wiederverwenden), `Kid` (Schüler/in mit Ranzen), `Donut`, `Letter`, `Door`. V7Ch0–2 unverändert, Stills geprüft. Alle Wort-Anker gegen `v7ch3–5.json` geprüft (kein MISSING). Kontaktbögen: `remotion/out/sheetV7Ch3.png`, `sheetV7Ch4.png`, `sheetV7Ch5.png`. Nicht gerendert.
+
+Echte Kapitel-Längen: Ch3 76,71 s · Ch4 81,45 s · Ch5 108,29 s → Ch3 startet bei 186,6 s (3:07), Ch4 bei 263,4 s (4:23, = Musik `music_k45`), Ch5 bei 344,8 s (5:45), Ch6 bei 453,1 s (7:33, = `music_k67`).
+
+Szenen-Startzeiten (Sekunden ab Kapitelanfang):
+| Kap. 3 | 3.1 0,0 · 3.2 5,5 · 3.2b 11,9 · 3.3 19,4 · 3.4 27,2 · 3.5 31,1 · 3.6 40,4 · 3.7 46,2 · 3.8 53,0 · 3.9 60,2 · 3.10 63,7 · 3.11 72,0 |
+|---|---|
+| **Kap. 4** | 4.1 0,0 · 4.2a 6,8 · 4.2b 10,0 · 4.3+4.4 15,7 · 4.5 23,6 · 4.6 29,2 · 4.7 37,3 · 4.8 42,6 · 4.9 48,6 · 4.10 58,1 · 4.11a 64,7 · 4.11b 70,5 · 4.12 78,0 |
+| **Kap. 5** | 5.1 0,0 · 5.2a 6,7 · 5.2b 12,9 · 5.3a 19,9 · 5.3b 22,9 · 5.4a 33,8 · 5.4b 40,6 · 5.5 47,0 · 5.6 50,3 · 5.7 58,9 · 5.8 66,2 · 5.9a 72,0 · 5.9b 78,0 · 5.10a 83,1 · 5.10b 89,7 · 5.11 96,4 · 5.12 99,4 |
+
+Re-Hooks (absolut): 3.11 „Es geht noch weiter …“ 258,6 s · 4.12 „Wer profitiert?“ 341,4 s · 5.7 „Oder schwarz?“ ≈ 410 s · 5.12 „Beide haben einen Punkt“ 444,2 s → Abstände 60–83 s.
+
+Abweichungen vom Plan:
+- 3.1 Bild „≈ 188 €“, Schlagzeile „knapp 190 €“ (= gesprochen). 3.2 geteilt: 3.2 Topf KV 13 → ≈ 17,5 % + Kalender „ab Januar 2027“; 3.2b Gesetzblatt, Pille „Zusatzbeitrag 2027?“ / „noch nicht festgelegt“ (Update 29.10. U1), Stempel „Gesetz“ auf dem Wort, „verkündet Juli 2026“. 3.4 statt Kalender „Sept.“ nur Bundestag (neutral) + „noch nicht beschlossen“; Quellenzeile nennt Anhörung 04.11. 3.5 „+57 €“ (Quellenzeile: Z = 2,9 %, Umlagen wie 2026). 3.8 Dokument „Empfehlung · Wirtschaftsausschuss“, Quellenzeile „Empfehlung, kein Plenumsbeschluss“ (U4). 3.9 Zitat-Tafel mit Pille „ZITAT“.
+- 4.3 + 4.4 zusammengelegt (Formular mit Schloss, „Steuer“/„Sozialversicherung“ durchgestrichen, Schild „Brutto = Netto“ bricht auf „vorbei“; Schlagzeile wechselt „Befreiung weg“ → „Brutto = Netto vorbei“). 4.2 geteilt (33 Kärtchen, Nr. 26 leuchtet → Blatt „Empfehlung 26“ mit Überschrift). 4.6 zeigt exakt „≈ 5,92 €“, Schlagzeile „knapp 6 € Rente“. 4.9 Treppe → Rampe auf „langsam“, Schlagzeile „Die Grenze“ → „Teilzeitfalle“ auf „Trotzdem“. 4.10 Bundesregierung als indirekte Rede, gekennzeichnet „sinngemäß“. 4.11 geteilt (Studie 2021 → Laden, ein grüner SV-Job zerfällt in zwei Minijobs).
+- 5.2 geteilt: Namensschild-Figur „Guido Zöllick · Präsident, Hotel- und Gaststättenverband“ (stilisiert, Pille „zitiert nach dpa“) → Zitat-Tafel wörtlich. 5.3 mit Vorlauf-Szene „Lupe auf Steuervorteil“. 5.4 geteilt (3,5 Mio. mit Hauptjob → Vergleich Hauptjob/Minijob „jeder Euro mehr“, ohne erfundene Beträge). 5.9 geteilt (Lohnzettel „− 130 €“ → Uhr „+13 Std.“), beide mit Pille „Rechnung der Verbände“. 5.10 geteilt (Waage + Pille „Arbeitsministerium“ → Zitat-Tafel „WÖRTLICH“). 5.11 Ring zeigt 55,9 %, Schlagzeile „56 % Frauen“.
+
+Offene Punkte:
+- Sa 31.10.: bei Zusatzbeitrag ≥ 3,1 % Bild 3.5 „+57 €“ (und 0.5) prüfen; 3.2b „noch nicht festgelegt“ anpassen, falls BMG-Bekanntmachung bis Render erschienen ist.
+- 3.4: Kuppel des neutralen Gebäudes wird teils von der Schlagzeile verdeckt (optisch ok).
+- 5.2a: rechte Bildhälfte bis „dpa“ (≈ 6 s) eher leer.
+- 4.4 Ranzen der Schülerfigur klein; 5.12 Figuren auf der Waage klein (s = 0,55).

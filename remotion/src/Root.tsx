@@ -26,6 +26,8 @@ import { Short21YT, Short21TT, S21_DUR } from "./ch/Short21";
 import { Short22YT, Short22TT, S22_DUR } from "./ch/Short22";
 import { Short23YT, Short23TT, S23_DUR } from "./ch/Short23";
 import { Short24YT, Short24TT, S24_DUR } from "./ch/Short24";
+import { Short26YT, Short26TT, S26_DUR } from "./ch/Short26";
+import { Short25YT, Short25TT, S25_DUR } from "./ch/Short25";
 import { V5Ch0, V5CH0_DUR } from "./v5/V5Ch0";
 import { V5Ch1, V5CH1_DUR } from "./v5/V5Ch1";
 import { V5Ch2, V5CH2_DUR } from "./v5/V5Ch2";
@@ -37,6 +39,9 @@ import { V5Ch7, V5CH7_DUR } from "./v5/V5Ch7";
 import { V7Ch0, V7CH0_DUR } from "./v7/V7Ch0";
 import { V7Ch1, V7CH1_DUR } from "./v7/V7Ch1";
 import { V7Ch2, V7CH2_DUR } from "./v7/V7Ch2";
+import { V7Ch3, V7CH3_DUR } from "./v7/V7Ch3";
+import { V7Ch4, V7CH4_DUR } from "./v7/V7Ch4";
+import { V7Ch5, V7CH5_DUR } from "./v7/V7Ch5";
 import { T5A, T5B, T5C, T5D } from "./ch/Thumb5";
 import { T6A, T6B, T6C } from "./ch/Thumb6";
 import { ThumbA, ThumbB, ThumbC, ThumbD } from "./ch/Thumb";
@@ -87,6 +92,10 @@ export const RemotionRoot = () => (
     <Composition id="Short23TT" component={Short23TT} durationInFrames={S23_DUR.tt} fps={30} width={1080} height={1920} />
     <Composition id="Short24YT" component={Short24YT} durationInFrames={S24_DUR.yt} fps={30} width={1080} height={1920} />
     <Composition id="Short24TT" component={Short24TT} durationInFrames={S24_DUR.tt} fps={30} width={1080} height={1920} />
+    <Composition id="Short26YT" component={Short26YT} durationInFrames={S26_DUR.yt} fps={30} width={1080} height={1920} />
+    <Composition id="Short26TT" component={Short26TT} durationInFrames={S26_DUR.tt} fps={30} width={1080} height={1920} />
+    <Composition id="Short25YT" component={Short25YT} durationInFrames={S25_DUR.yt} fps={30} width={1080} height={1920} />
+    <Composition id="Short25TT" component={Short25TT} durationInFrames={S25_DUR.tt} fps={30} width={1080} height={1920} />
     <Composition id="V5Ch0" component={V5Ch0} durationInFrames={V5CH0_DUR} {...V} />
     <Composition id="V5Ch1" component={V5Ch1} durationInFrames={V5CH1_DUR} {...V} />
     <Composition id="V5Ch2" component={V5Ch2} durationInFrames={V5CH2_DUR} {...V} />
@@ -98,6 +107,9 @@ export const RemotionRoot = () => (
     <Composition id="V7Ch0" component={V7Ch0} durationInFrames={V7CH0_DUR} {...V} />
     <Composition id="V7Ch1" component={V7Ch1} durationInFrames={V7CH1_DUR} {...V} />
     <Composition id="V7Ch2" component={V7Ch2} durationInFrames={V7CH2_DUR} {...V} />
+    <Composition id="V7Ch3" component={V7Ch3} durationInFrames={V7CH3_DUR} {...V} />
+    <Composition id="V7Ch4" component={V7Ch4} durationInFrames={V7CH4_DUR} {...V} />
+    <Composition id="V7Ch5" component={V7Ch5} durationInFrames={V7CH5_DUR} {...V} />
     <Composition id="T6A" component={T6A} durationInFrames={1} fps={30} width={1280} height={720} />
     <Composition id="T6B" component={T6B} durationInFrames={1} fps={30} width={1280} height={720} />
     <Composition id="T6C" component={T6C} durationInFrames={1} fps={30} width={1280} height={720} />
