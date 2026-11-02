@@ -59,6 +59,9 @@ const S: Sc[] = [
     at: fEig - 6, kind: "slide", render: (f) => (
       <g>
         <Lena f={f} x={520} y={470} s={1.0} reach={[fBefreien - 10, fBefreien, 99998, 99999]} look={6} />
+        <g opacity={tw(f, fDrei - 6, 12) * (1 - tw(f, fFormular - 10, 8))}>
+          <Pot x={1120} y={820} w={260} h={320} fill={0.25 * tw(f, fDrei, 24)} col={C.blue} label="Rente – Lenas Anteil" val="3,6 %" />
+        </g>
         <Pop f={f} at={fFormular - 4} x={1120} y={600}><Form x={0} y={0} title="BEFREIUNG" sign={tw(f, fBefreien, 20)} /></Pop>
         <Head f={f} at={fDrei} y={190} c={C.blue}>3,6 % Rente?</Head>
         <Src f={f} at={fDrei}>Quelle: Minijob-Zentrale · Deutsche Rentenversicherung (Eigenanteil 3,6 %)</Src>

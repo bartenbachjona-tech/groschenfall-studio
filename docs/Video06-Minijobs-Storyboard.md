@@ -186,3 +186,19 @@ Offene Punkte:
 - 3.4: Kuppel des neutralen Gebäudes wird teils von der Schlagzeile verdeckt (optisch ok).
 - 5.2a: rechte Bildhälfte bis „dpa“ (≈ 6 s) eher leer.
 - 4.4 Ranzen der Schülerfigur klein; 5.12 Figuren auf der Waage klein (s = 0,55).
+
+---
+
+## Stand 02.11. (Samstags-Etappe nachgeholt): Kapitel 6–7 animiert, Schwächen behoben, gerendert
+Audio erneut aus der Ablage wiederhergestellt (ZIP vom 29.10., `split`/`voice --tempo 1.06`/`long`), alle 8 `v7ch*.json` bitgleich, 0 Credits. Achtung: `gf.py split` in einer `while read`-Schleife frisst ffmpeg die stdin → Keys mit Array/`< /dev/null` übergeben.
+
+Dateien: `remotion/src/v7/V7Ch6.tsx` (9 Szenen), `V7Ch7.tsx` (5 Szenen), registriert als `V7Ch6`/`V7Ch7`; Thumbnails `remotion/src/ch/Thumb7.tsx` (`T7D`, `T6Bn` = T6B-neu), registriert. Kontaktbögen `remotion/out/sheetV7Ch0–7.png`, Nachkontrolle `sheetV7fix.png`.
+
+Szenen-Startzeiten (Sekunden ab Kapitelanfang):
+| Kap. 6 | 6.0 „Wo stehen wir?“ 0,0 · 6.1 Sicher 1,6 · 6.2 Geplant 8,7 · 6.3 Offen 19,7 · 6.4 CSU 27,5 · 6.5 Klaus 35,0 · 6.6 Widerruf 45,7 · 6.7 22 → 23 € 53,5 · 6.8 Rente/Antrag 58,9 |
+|---|---|
+| **Kap. 7** | 7.1 Bühne 0,0 · 7.2 drei Karten 14,0 · 7.3 MINIJOB-Schild 22,5 · 7.4 Abschaffen/Behalten 26,8 · 7.5+7.6 Endkarte + Abschlusszeile 30,3 (Endkarten-Fläche ≈ 15 s bis 45,2 s) |
+
+Abweichungen vom Plan: 6.0 neue Einstiegsszene (drei verdeckte Karten). 6.2 Kalender „4. November · Anhörung“, Stempel „nicht beschlossen“. 6.4 Sprechblase „Minijobs bleiben“ + Pille „CSU · laut Medienberichten“, kein Porträt, kein Zitat; „?“ auf „Wie das zusammenpasst“. 6.5 Zettel „Berichte, Sommer 2026: Rentner ausgenommen“, Häkchen → Fragezeichen, Stempel „keine amtliche Zusage“. 6.7 exakt 21,71 € → 22,79 €, Schlagzeile „knapp 22 € → 23 €“. 6.8 Antrag fliegt zu Toni (Pille „Arbeitgeber“), „Keine Rechtsberatung“. 7.5 Kachel „Warum sich Arbeiten in Deutschland nicht lohnt“ links, Abo-Kreis rechts (YouTube-Endscreen-Elemente darüberlegen), Groschen + „Groschenfall. Geld, endlich klar.“ oben links.
+
+Behobene Schwächen: 3.4 Kuppel war vom Giebel verdeckt (nicht von der Schlagzeile) → `Building dome` in kit7 neu (Tambour + Kuppel über dem Giebel), Gebäude tiefer gesetzt. 3.6 Lena stand halb unter dem Bildrand → links neben den Balken. 5.2a rechte Hälfte: Kachel „Gastgewerbe · Hotels · Restaurants · Kneipen“ ab „Präsident“. 5.3a Übergang (Frame ~590): „Steuervorteil“ blendet erst ein, wenn die Zitat-Tafel weg ist. 5.4b Hauptjob-Karte von Anfang an gefüllt (gedimmt „Steuer/Abgaben fällig“, voll auf „belastet“). 1.3 rechte Hälfte vor dem Formular: Topf „Rente – Lenas Anteil 3,6 %“. 6.x Schlagzeilen in den ersten 4 s tiefer (y 290), damit sie nicht mit dem Kapitel-Label kollidieren.

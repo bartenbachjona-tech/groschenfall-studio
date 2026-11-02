@@ -43,8 +43,19 @@ const S: Sc[] = [
     at: fGuido - 6, kind: "slide", render: (f) => (
       <g>
         <NamedBust f={f} x={720} y={520} s={1.0} name="Guido Zöllick" role="Präsident, Hotel- und Gaststättenverband" tagAt={fGuido} />
-        <Pop f={f} at={fDpa - 10} x={1360} y={520}><Pill x={0} y={0} text="Juni 2026 · zitiert nach dpa" col={C.blue} fg={C.white} s={40} /></Pop>
-        <Tx x={1360} y={640} s={30} c={C.gray} w={600} o={tw(f, fDpa, 10)}>stilisierte Darstellung</Tx>
+        <Pop f={f} at={fPraes + 4} x={1360} y={360}>
+          <g>
+            <rect x={-330} y={-110} width={720} height={190} rx={30} fill={C.deep} />
+            <g transform="translate(-240 -14)" stroke={C.amber} strokeWidth={12} strokeLinecap="round" fill="none">
+              <path d="M -26 -60 L -26 60 M -42 -60 L -42 -20 Q -26 -4 -10 -20 L -10 -60" />
+              <path d="M 26 60 L 26 -60 Q 52 -40 44 0 L 26 6" />
+            </g>
+            <text x={-150} y={-12} fontFamily="Sora" fontWeight={800} fontSize={46} fill={C.white}>Gastgewerbe</text>
+            <text x={-150} y={42} fontFamily="Sora" fontWeight={600} fontSize={28} fill={C.gray}>Hotels · Restaurants · Kneipen</text>
+          </g>
+        </Pop>
+        <Pop f={f} at={fDpa - 10} x={1360} y={600}><Pill x={0} y={0} text="Juni 2026 · zitiert nach dpa" col={C.blue} fg={C.white} s={40} /></Pop>
+        <Tx x={1360} y={720} s={30} c={C.gray} w={600} o={tw(f, fGuido, 10)}>stilisierte Darstellung</Tx>
         <Src f={f} at={fGuido}>Zitat zitiert nach Tageskarte/dpa 22.06.2026 · hogapage 23.06.2026</Src>
       </g>
     ),
@@ -65,7 +76,7 @@ const S: Sc[] = [
     at: p51 - 6, kind: "zoom", render: (f) => {
       const m = tw(f, fSteuerv - 10, 20, IO);
       return (
-        <g>
+        <g opacity={tw(f, p51 - 6, 8)}>
           <rect x={560} y={440} width={800} height={200} rx={30} fill={C.deep} />
           <text x={960} y={570} textAnchor="middle" fontFamily="Sora" fontWeight={800} fontSize={90} fill={C.amber}>Steuervorteil</text>
           <g transform={`translate(${lerp(500, 0, m)} ${lerp(260, 0, m)})`}><Mag x={1100} y={560} s={1.6} /></g>
@@ -118,15 +129,15 @@ const S: Sc[] = [
       <g>
         <Paper x={620} y={600} w={560} h={480} title="HAUPTJOB" col={C.gray}>
           <Row w={560} y={-70} label="jeder Euro mehr" val="" />
-          <Row w={560} y={20} label="Steuer" val="−" col={C.red} o={tw(f, fBelastet - 20, 10)} />
-          <Row w={560} y={90} label="Abgaben" val="−" col={C.red} o={tw(f, fBelastet - 10, 10)} />
-          <Row w={560} y={180} label="netto" val="weniger" col={C.red} big o={tw(f, fBelastet, 10)} />
+          <Row w={560} y={20} label="Steuer" val="fällig" col={C.red} o={0.35 + 0.65 * tw(f, fBelastet - 20, 10)} />
+          <Row w={560} y={90} label="Abgaben" val="fällig" col={C.red} o={0.35 + 0.65 * tw(f, fBelastet - 10, 10)} />
+          <Row w={560} y={180} label="netto" val="weniger" col={C.red} big o={0.35 + 0.65 * tw(f, fBelastet, 10)} />
         </Paper>
         <Paper x={1320} y={600} w={560} h={480} title="MINIJOB" col={C.green}>
           <Row w={560} y={-70} label="jeder Euro mehr" val="" />
-          <Row w={560} y={20} label="Steuer" val="0" col="#1F9E6B" o={tw(f, fAbgfrei, 10)} />
-          <Row w={560} y={90} label="Abgaben" val="0" col="#1F9E6B" o={tw(f, fAbgfrei + 6, 10)} />
-          <Row w={560} y={180} label="netto" val="= brutto" col="#1F9E6B" big o={tw(f, fAbgfrei + 12, 10)} />
+          <Row w={560} y={20} label="Steuer" val="0" col="#1F9E6B" o={0.35 + 0.65 * tw(f, fAbgfrei, 10)} />
+          <Row w={560} y={90} label="Abgaben" val="0" col="#1F9E6B" o={0.35 + 0.65 * tw(f, fAbgfrei + 6, 10)} />
+          <Row w={560} y={180} label="netto" val="= brutto" col="#1F9E6B" big o={0.35 + 0.65 * tw(f, fAbgfrei + 12, 10)} />
         </Paper>
         <Head f={f} at={fAbgfrei} y={175} c={C.green}>Nebenjob: brutto = netto</Head>
         <Src f={f} at={fAbgfrei}>Vereinfachte Darstellung · Quelle: Minijob-Zentrale (ein Minijob neben Hauptjob bleibt abgabenfrei für Beschäftigte)</Src>

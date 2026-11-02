@@ -100,9 +100,9 @@ const S: Sc[] = [
   { // 3.4 Bundestag (neutral) – noch nicht beschlossen
     at: fBT - 8, kind: "zoom", render: (f) => (
       <g>
-        <Building x={960} y={800} s={1.25} dome />
-        <Tx x={960} y={900} s={44} c={C.gray} w={700}>Bundestag berät</Tx>
-        <Pop f={f} at={fBeschl} x={960} y={600}><Pill x={0} y={0} text="noch nicht beschlossen" col={C.amber} s={60} /></Pop>
+        <Building x={960} y={900} s={1.08} dome />
+        <Tx x={960} y={975} s={44} c={C.gray} w={700}>Bundestag berät</Tx>
+        <Pop f={f} at={fBeschl} x={960} y={720}><Pill x={0} y={0} text="noch nicht beschlossen" col={C.amber} s={60} /></Pop>
         <Head f={f} at={fBT + 4} y={175}>Steuer: nur Entwurf</Head>
         <Src f={f} at={fBT}>Stand 29.10.2026: Anhörung Finanzausschuss 04.11.2026, keine 2./3. Lesung terminiert</Src>
       </g>
@@ -143,7 +143,7 @@ const S: Sc[] = [
             <Tx x={x0 + w9 + (W - w9) / 2 + 30} y={720} s={64} c={C.amber}>≈ 47 €</Tx>
             <Tx x={x0 + w9 + (W - w9) / 2 + 30} y={775} s={32} c={C.gray} w={700}>höhere Sätze</Tx>
           </g>
-          <g opacity={tw(f, fLena - 6, 12)}><Lena f={f} x={x0 + w9 / 2 - 30} y={940} s={0.45} smileAt={fLena} /></g>
+          <g opacity={tw(f, fLena - 6, 12)}><Lena f={f} x={160} y={560} s={0.5} smileAt={fLena} /></g>
           <Head f={f} at={fHoeher} y={175} c={C.amber}>Vor allem höhere Sätze</Head>
           <Src f={f} at={fLena}>Eigene Rechnung: Lohneffekt 30 € × 31,17 % = 9,35 € · Satzeffekt 633 € × 7,5 Prozentpunkte = 47,48 €</Src>
         </g>

@@ -396,7 +396,7 @@ export const Report: React.FC<{ x: number; y: number; s?: number; r?: number; op
 /** Neutrales Amtsgebäude (Säulen, Dreiecksgiebel) – statt Logos von Bundestag/Bundesrat/Verbänden */
 export const Building: React.FC<{ x: number; y: number; s?: number; dome?: boolean }> = ({ x, y, s = 1, dome }) => (
   <g transform={`translate(${x} ${y}) scale(${s})`}>
-    {dome && <><path d="M -150 -300 Q 0 -460 150 -300 Z" fill="#C9D3E2" opacity={0.6} />{[-90, -30, 30, 90].map((dx) => <line key={dx} x1={dx} y1={-300} x2={dx * 0.4} y2={-410} stroke="#5A6B88" strokeWidth={6} />)}</>}
+    {dome && <><rect x={-150} y={-440} width={300} height={70} fill="#9AA8BF" /><path d="M -140 -440 Q 0 -620 140 -440 Z" fill="#C9D3E2" opacity={0.75} />{[-84, -28, 28, 84].map((dx) => <line key={dx} x1={dx} y1={-440} x2={dx * 0.4} y2={-520} stroke="#5A6B88" strokeWidth={6} />)}</>}
     <path d="M -340 -300 L 0 -400 L 340 -300 Z" fill="#9AA8BF" />
     <rect x={-340} y={-300} width={680} height={40} fill="#C9D3E2" />
     {Array.from({ length: 6 }).map((_, i) => <rect key={i} x={-300 + i * 116} y={-260} width={50} height={240} fill="#DDE4EE" />)}
