@@ -16,6 +16,11 @@ Python (numpy, scipy, Pillow) und ffmpeg sind vorinstalliert. Browser: die Rende
 Nachtnummer: `state/log.md` lesen. Langvideo: Etappe laut §L und `state/langvideo.md`.
 Läuft die Routine in derselben Nacht ein zweites Mal (Log hat schon einen Eintrag mit heutigem Datum): keine neuen Shorts, sondern offene Punkte aus dem Log erledigen.
 
+**Lücken & Abbrüche (seit Auswertung 02.11.2026):** 31.10.–02.11. brachen drei Läufe am Nutzungslimit ab, ohne dass etwas im Repo landete.
+- **Zwischenstand sichern:** Nach jedem fertigen Short (Render + Mix), nach dem Terminieren und nach jeder Langvideo-Etappe sofort `state/log.md` (Zeile mit „Zwischenstand“) + neue `.tsx`/Texte committen und pushen. Ein Abbruch darf nie mehr als einen Arbeitsschritt kosten.
+- **Beim Start:** Hat `state/log.md` für Vortage keinen Eintrag, je Tag eine Zeile „Lücke – Lauf ohne Ergebnis“ eintragen. Danach den Ablageordner dieser Tage auf Jonas PC prüfen (`device_list_dir` `C:\Users\barte\Videos\Groschenfall\Nacht\<Datum>`; nur wenn der Ordner verbunden ist): fertige Shorts mit Kritiker-Freigabe laut dortiger `UPLOAD.md` = „Upload offen“ (§9a, max. 3/Tag/Plattform), nicht neu produzieren.
+- **Spätstart:** Beginnt der Lauf nach 12:00 (Europe/Berlin), die neuen Shorts für den **nächsten** Tag 17:00/19:00 terminieren (heute nur offene Uploads, wenn bis 16:30 fertig). Nach 15:30 nichts mehr für heute terminieren.
+
 ## 1. Themen (Agent „Scout“, Skills: idea-generation-and-ideation, trend-jacking, tubealfred youtube-keyword-ideas wenn verbunden)
 - Websuche: deutsche Nachrichten der letzten 7 Tage zu Geld, Steuern, Rente, Bürgergeld, Arbeit, Mieten, Preise, Politiker-Aussagen mit Zahlen.
 - `state/topics_done.md` lesen, keine Wiederholungen.
@@ -96,6 +101,7 @@ Ein ~10-min-Video pro Woche, Veröffentlichung **Sonntag 18:00** (Jona gibt frei
 | Samstag | Kapitel 6–7, Kontaktbogen + Bild-Kritiker, Render, Mix, SRT, Komprimieren, 3 Thumbnails, UPLOAD.md → Ablage + Nachricht an Jona: „bitte bis Sonntag 17 Uhr prüfen“ |
 | Sonntag | Puffer: Korrekturen, falls nötig; 17-Uhr-Short = Teaser aufs Langvideo |
 Shorts gehen in jeder Nacht vor, außer Samstag (dann Langvideo zuerst fertigstellen, notfalls nur 1 Short und melden).
+**Verpasster Sonntag:** Wurde das Langvideo nicht bis Samstag fertig, rutscht es auf den nächsten Sonntag 18:00; die Montags-Etappe (neues Thema) entfällt dann, die Läufe holen nach den Shorts die fehlenden Etappen nach (vorher Fakten neu prüfen). Erst danach beginnt ein neues Wochenthema.
 
 ## Abbruchregeln
 - Faktenlage unklar → Thema verwerfen statt raten.

@@ -40,5 +40,10 @@ Gilt ab dem Nachtlauf 28.10.2026 und geht PLAYBOOK §2/§3/§9 vor, wo sie sich 
 - Vergleiche ab jetzt nur noch als **Aufrufe nach ~24 h und ~72 h** (Alter immer mitschreiben), nie Videos unterschiedlichen Alters direkt.
 - **Vorgemerkter nächster Einzeltest (NICHT aktiv, erst nach dem 7-Tage-Entscheid ab 04.11. und nur, wenn eine Maßnahme ersetzt wird):** „Welcher Typ bist du / X gegen Y“ als Standardformat für jeden zweiten Short. Belege bisher: Heizöl 8,9k (einziger Ausreißer), S23 Typklassen bester Frühstart (YT 500 in 6,5 h, TikTok 3,3 % Likes vs. 0–0,4 % bei S21/S22), Konkurrent @dergeldwolf postet fast nur „X vs Y“ (29k–127k).
 
+## Stand Auswertung 02.11.2026 (M1–M3 bleiben unverändert)
+- 5 Tage / 6 Videos mit M1–M3, danach 3 Tage ohne Post (Nutzungslimit) → kein Tausch. Alle Messziele rot (TikTok Ø 4–10 s, YT bis zum Ende 22–52 %, Follower ±0 seit 29.10., Shares 1/1.732), aber nicht attribuierbar (M1–M3 gleichzeitig gestartet, Posting-Lücke, Basis nur ein Tag).
+- **Entscheid 04.11. wird als Format-Vergleich im selben Zeitraum geführt, nicht Vorher/Nachher:** Typ-/„Du oder dein Nachbar“-Shorts gegen die übrigen (bisher Typ vorn in 3 von 3: Heizöl, S23, S25 – TikTok Ø 9,2/9,9 s vs. 4,0–7,3 s; YT 35–52 %). Liegt Typ weiter klar vorn, wird der vorgemerkte Einzeltest Pflicht für jeden 2. Short. Nicht entscheiden, wenn bis dahin < 2 neue Shorts gelaufen sind.
+- Für 04.11. mitprüfen (Kritiker-Hinweise): TikTok-Abbruch „meist bei 0:01“ bei allen Shorts → Frame 0 + erste 0,5 s Ton von S21–S26 gegen Heizöl stellen; Konkurrenz-Hits widersprechen dem Datum-/Behörden-Verbot in Satz 1 („Ab heute, dem 1. November…“ 134k, „Jobcenter muss Stromkosten übernehmen“ 213k) → ggf. als nächster Test „tagesaktueller Stichtag in Satz 1“.
+
 ## Nächste Auswertung
 Bei „Auswertung bitte“: diese Messziele prüfen, Maßnahmen behalten/ersetzen.

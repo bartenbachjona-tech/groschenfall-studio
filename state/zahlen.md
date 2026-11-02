@@ -15,3 +15,8 @@ Jeder Abruf hängt einen Block an; Vergleich immer mit dem Block von vor ~2 Tage
 - YouTube: 29 Abos (+1) · 25.306 Aufrufe gesamt · S21 237, S22 234 (~30 h) · S23 500 (6,5 h), S24 144 (4,5 h) · S18 557, S20 390, S19 245 · S15–S17 1.200–1.300
 - TikTok: 19 Follower (+3) · S21 258, S22 278, S23 272, S24 228 · Mindestlohn 1.895 · Shares S21–S24: 0
 - Instagram: weiter nicht gepostet/messbar
+
+## 2026-11-02 17:30 (Auswertung, Studio)
+- YouTube: 28 Tage 27.511 Aufrufe, 103 h, +29 Abos · S21 306, S22 268, S23 972, S24 311, S25 185, S26 303 · bis Ende 22–52 % · seit 30.10. kein Upload, kein Langvideo
+- TikTok: 19 Follower (±0) · S21 258, S22 281, S23 313, S24 259, S25 336, S26 285 · Ø 4,0–9,9 s · 7 Tage 16k (Heizöl/Mindestlohn), 12 Shares
+- Instagram: pausiert
