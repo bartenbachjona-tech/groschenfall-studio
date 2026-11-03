@@ -1,6 +1,6 @@
 # Groschenfall – Nachtproduktion (Runbook)
 
-Ziel pro Nacht (seit 04.11.2026, Jonas Entscheidung – ersetzt die 2-Shorts-Regel vom 28.10.): **genau 1 Short pro Tag** (YouTube- und TikTok/Insta-Version), terminiert **für denselben Tag um 19:00 Uhr** (§9a). Nie mehr als 1 Short pro Tag und Plattform hochladen, plus die **Etappe des Wochen-Langvideos** (§L): ein ~10-Minuten-Video pro Woche, Veröffentlichung **Sonntag 18:00**. **Niemals sofort veröffentlichen.** Langvideos nie automatisch terminieren (Jona gibt frei).
+Ziel pro Nacht (seit 04.11.2026, Jonas Entscheidung – ersetzt die 2-Shorts-Regel vom 28.10.): **genau 1 Short pro Tag** (YouTube- und TikTok/Insta-Version), terminiert **für denselben Tag um 19:00 Uhr** (§9a). Nie mehr als 1 Short pro Tag und Plattform hochladen (die 1-pro-Tag-Regel gilt nur für Shorts). Dazu die **Etappe des Wochen-Langvideos** (§L): ein ~10-Minuten-Video pro Woche, Veröffentlichung **Sonntag 17:00**, seit 04.11.2026 (Jonas Entscheidung) **vom Nachtlauf selbst auf YouTube terminiert**, sobald Text- und Bild-Kritiker freigegeben haben. **Niemals sofort veröffentlichen.**
 
 **Vor allem anderen:** `docs/AUSWERTUNG_AKTUELL.md` lesen – die dort festgelegten Verbesserungen sind Pflicht und gehen dem Playbook vor.
 
@@ -25,7 +25,7 @@ Läuft die Routine in derselben Nacht ein zweites Mal (Log hat schon einen Eintr
 - Websuche: deutsche Nachrichten der letzten 7 Tage zu Geld, Steuern, Rente, Bürgergeld, Arbeit, Mieten, Preise, Politiker-Aussagen mit Zahlen.
 - `state/topics_done.md` lesen, keine Wiederholungen.
 - 10 Kandidaten, jeder mit Scoring nach PLAYBOOK §1 **und** Themenfilter M2 (Nutzwert-Frage + Suchwort) aus `docs/AUSWERTUNG_AKTUELL.md`. Nur Themen mit **Score ≥ 8/10** und belegbaren Primärquellen.
-- Langes Video: Thema muss zum Shorts-Publikum passen (siehe Kanal-Analyse); bevorzugt das Thema der stärksten Shorts der Vorwoche vertiefen. Sonntag: der 17-Uhr-Short ist Teaser aufs Langvideo („heute 18 Uhr“); Montag: ein Short verweist darauf („Ähnliches Video“ setzen).
+- Langes Video: Thema muss zum Shorts-Publikum passen (siehe Kanal-Analyse); bevorzugt das Thema der stärksten Shorts der Vorwoche vertiefen. Sonntag: der 19-Uhr-Short verweist aufs Langvideo, das seit 17 Uhr online ist („Ähnliches Video“ = Langvideo); Montag: ebenso.
 
 ## 2. Hooks (Agent „Hook“, Skill: hook-writer)
 Pro Short 5 Hook-Varianten (gesprochen + Text im Bild), dann die beste nach PLAYBOOK §2. Muster, die bei uns funktioniert haben: Auslandsvergleich („In Frankreich …“), persönlich mit Zahl („Früher 5, heute 2 – einer davon bist du“), wörtliches Politiker-Zitat mit Kontext. Schwach: abstrakte Zahlen ohne „du“, Nachrichten-Schlagzeilen („X steigt ab Januar“). Seit 28.10. Pflicht: Regeln M1 in `docs/AUSWERTUNG_AKTUELL.md` (Satz 1, Bild 1, Ton ab 0,2 s). Stärkster Treffer bisher: Identitäts-Hook „Drei Nachbarn, drei Heizungen – welcher bist du?“ (TikTok 8.831).
@@ -69,7 +69,7 @@ python3 tools/gf.py mixshort remotion/out/v4_Short<NR>TT.mp4 out/$D/Groschenfall
 Langvideo: Kapitel als `src/v<NR>/V<NR>Ch<i>.tsx` nach Muster `src/v5/`, `gf.py long`, rendern, `gf.py mixlong` (Musikplan hook→k23→k45→k67), `gf.py srt`, `gf.py compress`. Thumbnail im Stil von Video 2 (`src/ch/Thumb5.tsx` T5D): Kicker amber, 2-zeilige weiße Headline mit amber „?“, ein großes schattiertes 3D-Objekt auf Schräge + Figur. 3 Varianten für A/B-Test.
 
 ## 8. Texte
-`out/$D/UPLOAD.md`: pro Video Titel (YouTube), Beschreibung mit Quellen + KI-Hinweis, Tags, angepinnter Kommentar, TikTok/Insta-Caption (Instagram max. 5 Hashtags), Uhrzeit (Short 19:00, Langvideo Sonntag 18:00), „Ähnliches Video“-Empfehlung.
+`out/$D/UPLOAD.md`: pro Video Titel (YouTube), Beschreibung mit Quellen + KI-Hinweis, Tags, angepinnter Kommentar, TikTok/Insta-Caption (Instagram max. 5 Hashtags), Uhrzeit (Short 19:00, Langvideo Sonntag 17:00), „Ähnliches Video“-Empfehlung.
 
 ## 9. Abliefern
 1. Alle Dateien aus `out/$D/` mit SendUserFile schicken (Videos `display: attach`).
@@ -91,7 +91,7 @@ Nur Shorts mit Kritiker-Freigabe. **1 Short pro Tag um 19:00** (Europe/Berlin) a
 - Ergebnis (Plattform, Uhrzeit, Link) in `state/log.md` und in die Nachricht an Jona.
 
 ## L. Wochen-Langvideo in Etappen (seit 28.10.2026)
-Ein ~10-min-Video pro Woche, Veröffentlichung **Sonntag 18:00** (Jona gibt frei, nicht automatisch terminieren). Etappe nach Wochentag des Laufs (Europe/Berlin, Lauf startet ~01:37). Stand, Thema, Dateien und offene Punkte in `state/langvideo.md` führen; hängt eine Etappe, zuerst nachholen.
+Ein ~10-min-Video pro Woche, Veröffentlichung **Sonntag 17:00**. Seit 04.11.2026 terminiert der Nachtlauf es **selbst** auf YouTube (Kanal Groschenfall, Profilprüfung wie §9a; nur YouTube, kein TikTok/Instagram), sobald Text-Kritiker UND Bild-Kritiker (Kontaktbögen aller Kapitel) freigegeben haben – spätestens im Samstagslauf, Nachzügler im Sonntagslauf bis 15:30. Vorher Fakten auf Tagesstand prüfen. Ohne Freigabe: nicht terminieren, Jona melden. Upload großer Dateien: Teile aus der Ablage stagen (`device_stage_files`), im Container zusammensetzen (Teile per `cat` bzw. ffmpeg-concat), mit ffprobe Länge prüfen, dann hochladen; klappt das nicht, lokal neu rendern. YouTube-Felder: Titel, Beschreibung mit Quellen + Kapitelmarken, Tags (ohne Kommas), Thumbnail (Haupt-Thumbnail; Test & Compare mit den anderen zwei, falls angeboten), KI-Angabe „Ja“, Zeitplan Sonntag 17:00. Etappe nach Wochentag des Laufs (Europe/Berlin, Lauf startet ~01:37). Stand, Thema, Dateien und offene Punkte in `state/langvideo.md` führen; hängt eine Etappe, zuerst nachholen.
 | Lauf | Etappe |
 |---|---|
 | Montag | Thema wählen (Scout; bevorzugt Thema der besten Shorts der Vorwoche), Recherche, Faktenblatt mit Primärquellen, 5 Titel-Ideen + 3 Thumbnail-Konzepte |
@@ -99,10 +99,10 @@ Ein ~10-min-Video pro Woche, Veröffentlichung **Sonntag 18:00** (Jona gibt frei
 | Mittwoch | Überarbeitung, Kritiker-Freigabe (≥ 8/10 je Kategorie), Storyboard: Szenenliste je Kapitel |
 | Donnerstag | Stimme kapitelweise (ElevenLabs, estimate_only vorher), Musikplan, Animation Kapitel 0–2 |
 | Freitag | Animation Kapitel 3–5 |
-| Samstag | Kapitel 6–7, Kontaktbogen + Bild-Kritiker, Render, Mix, SRT, Komprimieren, 3 Thumbnails, UPLOAD.md → Ablage + Nachricht an Jona: „bitte bis Sonntag 17 Uhr prüfen“ |
-| Sonntag | Puffer: Korrekturen, falls nötig; 17-Uhr-Short = Teaser aufs Langvideo |
+| Samstag | Kapitel 6–7, Kontaktbogen + Bild-Kritiker, Render, Mix, SRT, Komprimieren, 3 Thumbnails, UPLOAD.md → Ablage, **auf YouTube für Sonntag 17:00 terminieren** + Nachricht an Jona (Link; er kann bis 17 Uhr stoppen) |
+| Sonntag | Puffer: falls Samstag nicht fertig – fertigstellen und bis 15:30 für 17:00 terminieren; 19-Uhr-Short verweist aufs Langvideo |
 Shorts gehen in jeder Nacht vor, außer Samstag (dann Langvideo zuerst fertigstellen, notfalls nur 1 Short und melden).
-**Verpasster Sonntag:** Wurde das Langvideo nicht bis Samstag fertig, rutscht es auf den nächsten Sonntag 18:00; die Montags-Etappe (neues Thema) entfällt dann, die Läufe holen nach den Shorts die fehlenden Etappen nach (vorher Fakten neu prüfen). Erst danach beginnt ein neues Wochenthema.
+**Verpasster Sonntag:** Wurde das Langvideo nicht bis Samstag fertig, rutscht es auf den nächsten Sonntag 17:00; die Montags-Etappe (neues Thema) entfällt dann, die Läufe holen nach den Shorts die fehlenden Etappen nach (vorher Fakten neu prüfen). Erst danach beginnt ein neues Wochenthema.
 
 ## Abbruchregeln
 - Faktenlage unklar → Thema verwerfen statt raten.

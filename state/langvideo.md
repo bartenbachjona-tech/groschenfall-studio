@@ -1,4 +1,14 @@
 # Wochen-Langvideo – Stand
+
+## JONA 04.11.2026 00:44 – GILT VORRANGIG
+- **V7 Minijobs ist von Jona FREIGEGEBEN: Veröffentlichung Mi 04.11.2026 17:00 auf YouTube.** Der Lauf in der Nacht 04.11. (01:37) terminiert es (YouTube Studio, Kanal Groschenfall, Zeitplan 04.11. 17:00), Texte aus der Ablage `Videos\Groschenfall\Nacht\2026-11-02\UPLOAD.md`, Datei aus `v7_teile\` (3 Teile stagen, zusammensetzen, ffprobe 9:26 prüfen) bzw. lokal neu rendern (Audio-Anleitung unten, 0 Credits). Vorher kurz prüfen: Pauschsteuer-Entwurf (Anhörung 04.11. ist erst tagsüber – Video sagt „Entwurf“, das bleibt korrekt), Zusatzbeitrag „rund 57 €“. Haupt-Thumbnail T7D. Klappt das Terminieren nicht: sofort Jona per Push melden, damit er es morgens selbst hochladen kann.
+- **Neues Langvideo V8 bis So 08.11.2026, automatisch terminiert für So 08.11. 17:00** (verkürzte Woche):
+  - Mi 04.11. (Lauf 01:37, nach Short + V7-Termin): Thema (Thema des besten Shorts der Woche bzw. Monatsformat „Das ändert sich im Dezember – für dein Geld“, AUSWERTUNG_AKTUELL), Recherche, Faktenblatt, Skript v1 (~1.450 Wörter, Kap. 0–7)
+  - Do 05.11.: Faktencheck, Kritiker bis Freigabe, Storyboard
+  - Fr 06.11.: Stimme (~10.000 Credits, estimate_only vorher), Musikplan, Animation Kap. 0–3
+  - Sa 07.11.: Kap. 4–7, Bild-Kritiker, Render, Mix, SRT, 3 Thumbnails, UPLOAD.md → **für So 08.11. 17:00 auf YouTube terminieren**, Jona melden
+  - So 08.11.: Puffer (bis 15:30 terminieren)
+  - Guthaben: ~27.500 Credits frei am 04.11. (Shorts ~1.000/Tag + V8 ~10.000) – reicht, aber knapp; vor der Stimme prüfen.
 Rhythmus siehe NIGHT_RUN.md §L. Veröffentlichung Sonntag 18:00, Jona gibt frei.
 
 ## Woche bis So 01.11.2026 – V6 „Minijobs“ (Einstieg mitten in der Woche)

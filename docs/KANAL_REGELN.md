@@ -22,8 +22,8 @@
 - Thumbnails im Stil von Video 2/Video 5 (T5D): Kicker amber, große weiße 2-Zeilen-Headline mit amber „?“, ein großes schattiertes 3D-Objekt auf Diagonale + Figur. Max. 2–4 Wörter.
 
 ## Veröffentlichung
-- Claude veröffentlicht **nie sofort**. Seit 24.10.2026 (Jonas Entscheidung) **terminiert der Nachtlauf freigegebene Shorts selbst** für denselben Tag auf YouTube, TikTok und Instagram; seit 04.11.2026: **nur noch 1 Short pro Tag um 19:00** (vorher 28.10.–03.11.: 2 Shorts 17:00/19:00). Jona kann bis 19 Uhr stoppen. Langvideos werden nie automatisch terminiert.
+- Claude veröffentlicht **nie sofort**. Seit 24.10.2026 (Jonas Entscheidung) **terminiert der Nachtlauf freigegebene Shorts selbst** für denselben Tag auf YouTube, TikTok und Instagram; seit 04.11.2026: **nur noch 1 Short pro Tag um 19:00** (vorher 28.10.–03.11.: 2 Shorts 17:00/19:00). Jona kann bis 19 Uhr stoppen. Langvideos terminiert der Nachtlauf seit 04.11.2026 selbst (nur YouTube, Sonntag 17:00, nach Text- + Bild-Kritiker-Freigabe); Jona kann bis 17 Uhr stoppen.
 - **„hochladen“** (Jonas Nachricht am Morgen) = OK, die Shorts der Nacht **am selben Tag auf YouTube, TikTok und Instagram zu terminieren** (nicht sofort veröffentlichen). Seit 04.11.: 1 Short um 19:00.
-- Lange Videos: **eins pro Woche, ~10 Minuten, Sonntag 18:00** (seit 28.10.2026). KI-Angabe bei YouTube: „Ja, KI verwendet“ (Stimme), veränderte Inhalte „Nein“.
+- Lange Videos: **eins pro Woche, ~10 Minuten, Sonntag 17:00** (seit 04.11.2026; vorher 18:00). Die Regel „1 pro Tag“ gilt nur für Shorts. KI-Angabe bei YouTube: „Ja, KI verwendet“ (Stimme), veränderte Inhalte „Nein“.
 - Instagram: **pausiert seit 29.10.2026** (Jonas Entscheidung). Falls wieder aktiv: nur normale Reels (kein Trial Reel), max. 5 Hashtags.
 - Keine Logins/Credentials eingeben, keine dauerhaften Löschungen.
