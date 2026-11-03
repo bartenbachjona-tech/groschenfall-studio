@@ -19,6 +19,7 @@ Gilt ab dem Nachtlauf 28.10.2026 und geht PLAYBOOK §2/§3/§9 vor, wo sie sich 
 
 ## M2 – Themenfilter „Nutzwert + suchbar“
 - Thema nur, wenn es eine dieser Fragen beantwortet: **„Was muss ich jetzt tun / was steht mir zu?“** (Frist, Geld zurück, Fehler vermeiden) · **„Welcher Typ bin ich?“** (2–3 Typen im Video, wie Heizöl) · **„Wer gegen wen?“** (Vergleich, Gerechtigkeit). Reine Nachricht ohne Konsequenz für den Zuschauer → verwerfen.
+- (Seit 04.11.2026 nur 1 Short pro Tag: Frist/Warnung/„steht dir zu“ bleibt der Standardtyp; „jeden 2. Short“ = jeden 2. Tag. Auswertungen vergleichen ab 04.11. pro Video, nicht pro Tag.)
 - **Pro Nacht mindestens 1 Short vom Typ Frist/Warnung/„steht dir zu“** (Konkurrenz: Rechte-Tipps und Fristen sind die Ausreißer, z. B. Jobcenter-Rechte 277k–493k).
 - **Suchwort:** Scout nennt pro Thema den Begriff, nach dem Leute suchen (Google-/YouTube-Autocomplete prüfen, im Log notieren). Suchwort steht **am Anfang** von YouTube-Titel und TikTok-Caption (z. B. „Heizkosten 2026: …“).
 - Starke Themenfelder laut YouTube-Konkurrenz: Rente/Krankenkasse für Rentner, Sozialabgaben und Stichtage, **Mogelpackung mit Markenname + Grammzahl** (VerpackungsProf 0,15–2,4 Mio.; unser bester YT-Short war ebenfalls Mogelpackung), Discounter-Handelsmarken („Wer steckt wirklich hinter …“), Jobcenter-Rechte. Breite Themenmischung ohne Betroffenheit funktioniert nachweislich nicht.
