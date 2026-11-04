@@ -1,5 +1,10 @@
 # Wochen-Langvideo – Stand
 
+## Stand Nacht 04.11.2026 (Lauf #10)
+- **V7 Minijobs TERMINIERT: Mi 04.11.2026 17:00 https://youtu.be/w_SKOiCvULk** (Haupt-Thumbnail T7D, Kapitel + Quellen in der Beschreibung; kein A/B-Thumbnail-Test).
+- **V8 Etappe Mi ✅:** Thema „Das ändert sich 2027 – für dein Geld“ (7 Änderungen, Scoring 11/12). Dateien: `docs/Video08-Aenderungen2027-Faktenblatt.md`, `…-Paket.md` (10 Titel, Favorit „Das ändert sich 2027: 7 Dinge, die du in Euro spürst“, Thumbnails T8A Kalender „AB JANUAR / Teurer?“ (Haupt), T8B Briefkasten „KRANKENKASSE / Kein Brief?“, T8C Waage „2027 / Plus oder Minus?“), `…-Skript.md` (v1, 1.443 Wörter ≈ 9:22, Kap. 0–7, Pointe: Kasse darf ohne Brief erhöhen).
+- **Do 05.11. (nach S30 + Groschen-Bau §B):** Faktencheck mit Primärquellen – v. a. (1) § 175 SGB V: Hinweispflicht der Kasse wirklich entfallen? (trägt Pointe, Kap. 7, T8B), (2) **Name/Amt des Bundesgesundheitsministers und das Zitat aus der BMG-PM 30.10. prüfen (Skript nennt „Carsten Linnemann“ – unbedingt verifizieren)**, (3) CO2-Preis Bundesrat/Verkündung, (4) Kindergeld ohne Antrag, (5) Tankrabatt-Weitergabe „rund vier Fünftel“, (6) Zigarettensteuer 2026, (7) Inkrafttreten Zuzahlungen, (8) Anhörung 04.11. Dann Text-Kritiker (fable) bis Freigabe, Storyboard.
+
 ## JONA 04.11.2026 00:44 – GILT VORRANGIG
 - **V7 Minijobs ist von Jona FREIGEGEBEN: Veröffentlichung Mi 04.11.2026 17:00 auf YouTube.** Der Lauf in der Nacht 04.11. (01:37) terminiert es (YouTube Studio, Kanal Groschenfall, Zeitplan 04.11. 17:00), Texte aus der Ablage `Videos\Groschenfall\Nacht\2026-11-02\UPLOAD.md`, Datei aus `v7_teile\` (3 Teile stagen, zusammensetzen, ffprobe 9:26 prüfen) bzw. lokal neu rendern (Audio-Anleitung unten, 0 Credits). Vorher kurz prüfen: Pauschsteuer-Entwurf (Anhörung 04.11. ist erst tagsüber – Video sagt „Entwurf“, das bleibt korrekt), Zusatzbeitrag „rund 57 €“. Haupt-Thumbnail T7D. Klappt das Terminieren nicht: sofort Jona per Push melden, damit er es morgens selbst hochladen kann.
 - **Neues Langvideo V8 bis So 08.11.2026, automatisch terminiert für So 08.11. 17:00** (verkürzte Woche):

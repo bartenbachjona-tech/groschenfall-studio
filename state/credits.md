@@ -15,3 +15,4 @@ Der ElevenLabs-Connector kann das Restguthaben NICHT abfragen. Damit NIGHT_RUN �
 | 2026-10-30 | unbekannt | 1.615 (2 Shorts: 822 + 793; Langvideo 0 – Audio aus Ablage) | unbekannt |
 | 2026-11-02 | unbekannt | 1.694 (2 Shorts: 842 + 852; Langvideo 0 – Audio aus Ablage) | unbekannt |
 | 2026-11-03 | **17 Credits Rest** (laut Fehlermeldung ElevenLabs, Kontingent 176.049) | 0 (beide Short-Aufrufe abgelehnt) | 17 – Aufladen nötig |
+| 2026-11-04 | ~27.500 frei (Jona, 04.11. 00:40) | 862 (1 Short S29) | ~26.640 |
