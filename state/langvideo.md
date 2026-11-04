@@ -1,3 +1,5 @@
+**PAUSE SHORTS – JONA 04.11.2026 12:05 (gilt vorrangig vor allem, auch vor dem Pensum im Aufgaben-Prompt):** Bis Jona im Studio-Chat ein neues Muster-Short freigibt, produziert und terminiert der Nachtlauf **KEINE Shorts** (auch nicht aus docs/vorbereitet). Weiter erlaubt: Langvideo-V8-Etappen laut state/langvideo.md (Faktencheck, Kritiker, Storyboard, Animation) und der Bau von `remotion/src/kit/Groschen.tsx`. **Stimme:** Jona will eine neue Groschenfall-Stimme (alte klingt nach KI und monoton) – KEINE Sprachaufnahmen mit Johannes r8MyP4qUsq5WFFSkPdfV mehr; V8-Stimme erst erzeugen, wenn die neue Voice-ID in docs/brand/STIMME.md eingetragen ist (sonst Etappe verschieben und Jona melden).
+
 # Wochen-Langvideo – Stand
 
 ## Stand Nacht 04.11.2026 (Lauf #10)
