@@ -56,3 +56,22 @@ Bester Post: S25 Heizkosten „Du oder dein Nachbar“ (TT Ø 9,9 s / 3,8 % ganz
 Nicht von hier lösbar (Jona): Nutzungslimit (Groschenfall-Nachtlauf braucht den Kontingent-Vorrang nachts, andere Automationen weichen), Ordner `Videos\Groschenfall` für Nachtläufe verbinden/prüfen, Inhalt `Nacht\2026-11-02` ansehen, ElevenLabs-Guthaben in credits.md.
 
 **Kritiker (fable): 4/10.** Kernkritik: n=6 im Kaltstart, drei gleichzeitige Maßnahmen + Lücke → Vorher/Nachher nicht deutbar; einziges belastbares Signal: Typ-Format 3 von 3 vorn; wirksamster Hebel ist Output (Puffer) statt Hook-Feintuning. Umgesetzt: Entscheid 04.11. auf Format-Vergleich umgestellt, Frame-0-/Ton-Prüfung und Stichtag-Beobachtung aufgenommen. Abweichungen: geplanter „Sparmodus“ (weniger Kritiker-Runden) gestrichen – Kritiker hat recht, das Limit verbrauchen alle Automationen zusammen. Puffer „2–3 Tage voraus terminieren“ NICHT eingeführt: widerspricht Jonas Regel „terminiert für denselben Tag, Jona kann bis 17 Uhr stoppen“ → als Vorschlag an Jona. YouTube als Leitmetrik: Messziele bleiben bis 04.11. unverändert (kein Wechsel ohne 7-Tage-Entscheid).
+
+## 2026-11-04 (automatisch, 01:04–01:25 MEZ, Zeitfenster bis 01:20 wegen Nachtlauf)
+**Datenlage:** Chrome „Browser 2“ (93e4a890…) = TikTok groschenfall_yt ✅ + YouTube Studio UC9YJQdkr4rRO-jwkB2aY_kw ✅ (nur gelesen, Tab um ~01:13 geschlossen). Browser 1/3 nicht angefasst. Instagram pausiert. vidIQ/Apify nicht genutzt. Konto-Übersichten 7/28 T, Follower-/Abozahl und Konkurrenz aus Zeitgründen nicht erhoben (yt-dlp in dieser Umgebung nicht installiert).
+Neu seit 02.11.: nur S27 + S28 (beide 02.11., Alter ~29 h, vorläufig). 03.11. kein Post (ElevenLabs leer, inzwischen aufgeladen).
+
+| Short (Alter ~29 h) | TikTok Aufr./Likes/Shares | TT Ø / ganz / +Follower / Abbruch | YT Aufr. | YT bis Ende / Ø / Suche |
+|---|---|---|---|---|
+| S27 Mogelpackung Lorenz (Marke+Gramm) | 247/10/2 | 12,7 s / 3,5 % / 1 / 0:01 | 313 | 44,0 % / 0:17 / 0,3 % |
+| S28 Frist: Nebenkostennachzahlung Jobcenter | 313/12/0 | 8,2 s / 1,9 % / 1 / 0:02 | 136 | 23,1 % / 0:18 / **15,9 %** |
+
+**Ampel:** TikTok Ø ≥ 14 s 🔴 (bester Wert bisher 12,7 s S27) · YT bis Ende ≥ 55 % 🔴 (23–44 %) · Follower +20/7 T 🔴 (+2 aus diesen zwei) · Share ≥ 0,6 % 🔴 (2 Shares bei S27 = Rauschen, kein Treffer) · Langvideo-CTR ⚪ (V7 erst 04.11. 17:00).
+Bester: S27 Mogelpackung (Marke + Grammzahl, höchste Ø-Wiedergabe aller Nachtlauf-Shorts). Schwächster: S28 bei Bindung (YT 23 %), aber einziger Short mit nennenswertem YT-Suchanteil (15,9 %) – Suchwort-Titel wirkt.
+
+**7-Tage-Entscheid (Formatvergleich):** Typ-Format NICHT mehr klar vorn (S27 12,7 s > S23 9,2 / S25 9,9 s) → Typ-Pflicht wird nicht aktiviert. M1–M3 bleiben (n=2 neue Shorts nach Posting-Lücken, nicht deutbar).
+**Konkurrenz:** diesmal nicht erhoben (Zeit + kein yt-dlp); Stand siehe 02.11. Bezugspunkt bleibt VerpackungsProf (Mogelpackung Marke+Gramm 0,15–2,4 Mio.).
+
+**Reparaturen (AUSWERTUNG_AKTUELL):** (1) Titelregel präzisiert: Suchwort in den ersten 5 Wörtern, Serien-Präfix davor erlaubt; YouTube- und TikTok-Präfix identisch (S28: YT „Frist:“, TikTok „Steht dir zu:“). (2) Mogelpackung (Marke + Grammzahl + Grundpreis) fest 2 von 7 Shorts/Woche – begründet mit Konkurrenz-Evidenz, nicht mit S27 allein. (3) YT-Suchanteil wird ab jetzt pro Short mitgeschrieben.
+**Kritiker (fable): 5/10.** Übernommen: Share-„Treffer“ gestrichen; Mogelpackung-Platz mit Konkurrenz statt n=1 begründet und auf 2/7 erhöht (sonst erst in 4 Wochen messbar); YT-Suchanteil als Beobachtungsgröße. Nicht sofort umgesetzt: „erstes Frame testen statt Satz 1“ (alle brechen bei 0:01 ab) – das wäre ein neuer Test; nur einer gleichzeitig, deshalb als NÄCHSTER Einzeltest vorgemerkt (Frame 0 = Marke/Betrag als Standbild-Text).
+Für Jona: TikTok/YT-Kontoübersicht und Konkurrenz beim nächsten Lauf nachholen; Auswertungs-Startzeit liegt zu knapp vor dem Nachtlauf (Start 01:04, Fenster 16 min) – früher terminieren (geplant war 22:47, gefeuert erst 01:04).

@@ -46,5 +46,12 @@ Gilt ab dem Nachtlauf 28.10.2026 und geht PLAYBOOK §2/§3/§9 vor, wo sie sich 
 - **Entscheid 04.11. wird als Format-Vergleich im selben Zeitraum geführt, nicht Vorher/Nachher:** Typ-/„Du oder dein Nachbar“-Shorts gegen die übrigen (bisher Typ vorn in 3 von 3: Heizöl, S23, S25 – TikTok Ø 9,2/9,9 s vs. 4,0–7,3 s; YT 35–52 %). Liegt Typ weiter klar vorn, wird der vorgemerkte Einzeltest Pflicht für jeden 2. Short. Nicht entscheiden, wenn bis dahin < 2 neue Shorts gelaufen sind.
 - Für 04.11. mitprüfen (Kritiker-Hinweise): TikTok-Abbruch „meist bei 0:01“ bei allen Shorts → Frame 0 + erste 0,5 s Ton von S21–S26 gegen Heizöl stellen; Konkurrenz-Hits widersprechen dem Datum-/Behörden-Verbot in Satz 1 („Ab heute, dem 1. November…“ 134k, „Jobcenter muss Stromkosten übernehmen“ 213k) → ggf. als nächster Test „tagesaktueller Stichtag in Satz 1“.
 
+## Stand Auswertung 04.11.2026 (M1–M3 bleiben; Typ-Pflicht NICHT aktiviert)
+- Typ-Format nicht mehr klar vorn (Mogelpackung S27: TT Ø 12,7 s, YT 44 %) → kein Pflicht-Typ-Short.
+- **Titel/Caption:** Suchwort in den ersten 5 Wörtern; Serien-Präfix davor erlaubt („Frist: Nebenkostennachzahlung Jobcenter …“). Präfix auf YouTube und TikTok IDENTISCH.
+- **Mogelpackung fest 2 von 7 Shorts pro Woche:** Marke + alte/neue Grammzahl + Grundpreis-Steigerung in Satz 1/Titel (Beleg: VerpackungsProf 0,15–2,4 Mio.; eigene beste Werte S24/S27). Nur mit Quelle (Verbraucherzentrale/Packung), Marken nur im Text, keine Logos/Verpackungen zeichnen.
+- Log pro Short zusätzlich: **YT-Suchanteil** (S28 mit Suchwort-Titel: 15,9 %).
+- **Vorgemerkter nächster Einzeltest** (nicht aktiv): Frame 0 als Standbild-Text mit Marke/Betrag (alle Shorts verlieren die meisten bei 0:01 – Problem liegt im ersten Bild, nicht nur in Satz 1).
+
 ## Nächste Auswertung
 Bei „Auswertung bitte“: diese Messziele prüfen, Maßnahmen behalten/ersetzen.
