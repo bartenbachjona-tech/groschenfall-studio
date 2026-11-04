@@ -1,4 +1,6 @@
-# Groschenfall – Content-Playbook (Shorts 30–45 s · Lang 6–7 min)
+# Groschenfall – Content-Playbook (Shorts 28–40 s · Lang ~10 min)
+
+**Rang 5 der Regeln (Marke v2, seit 05.11.2026):** Sicherheit/Recht in `docs/KANAL_REGELN.md` > `docs/brand/*` (Positionierung, Stimme, Look, Serien) > `docs/STUDIO_HANDBUCH.md` > `docs/AUSWERTUNG_AKTUELL.md` > dieses Playbook. Widerspricht etwas hier einer höheren Ebene, gilt die höhere.
 
 **Quellen je Abschnitt:** 1 idea-generation + trend-jacking + viral-reverse-engineering · 2 hook-writer · 3 short-form-video-script + youtube-shorts · 4 youtube-long-form + storytelling-and-narrative · 5 youtube-publishing-and-metadata + hook-writer · 6 thumbnail-design · 7 youtube-publishing-and-metadata · 8 content-research-and-sourcing · 9 Synthese aller Rubriken (hook-writer-Scoring, CHAIN, WATCH, CLICK, FACTS) · 10 experimentation-and-ab-testing + thumbnail-design
 
@@ -43,15 +45,17 @@ Alle Zahlen sind Richtwerte aus den Skills (Stand 2026) und sollten vierteljähr
 | Identität/Ansprache | „Steuerklasse 5?“ / „Wenn du in Steuerklasse 5 bist, hör kurz zu.“ |
 | Neugierlücke | „Das steht im Kleingedruckten“ / „Die Regel ist bekannt. Die Ausnahme fast nicht.“ |
 | In-medias-res | „Brief vom Jobcenter“ / „Der Brief kommt am Dienstag. Frist: zwei Wochen.“ |
-| Aktualität | „Ab 1. Januar“ / „Ab Januar ändert sich das für X Millionen Menschen.“ (Zahl belegt) |
+| Aktualität | nur als markiertes Experiment „tagesaktueller Stichtag“ (`docs/brand/SERIEN.md`); sonst Datum nie in Satz 1 (`docs/brand/STIMME.md`) |
 
 **Mechanismus nach Ziel:** Reichweite → Kontra, Story, Zahl. Kommentare → Frage, Kontra. Speichern → Zahl, Fehler, Autorität.
 
-**Verbote:** Logo-Intro, „Hallo und willkommen“, „In diesem Video…“ · das Bild beschreiben · leere Neugier („Du wirst es nicht glauben“) · Auflösung schon im ersten Satz · „Alle aufgepasst“ · erfundene oder gerundete Fake-Präzision · künstliche Dringlichkeit · Angstmache bei Geldthemen (YMYL) · Clickbait, den das Video nicht einlöst.
+**Reihenfolge (Handbuch G1–G3):** Pointe festlegen → Schlüsselbild (Gegenstand + €-Betrag, `docs/brand/LOOK.md`) → Hook in ≥ 2 der 6 Formate (Fortune Teller, Experimenter, Teacher, Magician, Investigator, Contrarian) → Variante mit dem größten Kontrast wählen. Das Signet (Groschen + Klick-Kling) steckt im Hook, nie als eigenes Intro.
+
+**Verbote** (vollständige Bann-Liste inkl. Schluss-Signale: `docs/brand/STIMME.md`): Logo-Intro, „Hallo und willkommen“, „In diesem Video…“ · das Bild beschreiben · leere Neugier („Du wirst es nicht glauben“) · Auflösung schon im ersten Satz · „Alle aufgepasst“ · erfundene oder gerundete Fake-Präzision · künstliche Dringlichkeit · Angstmache bei Geldthemen (YMYL) · Clickbait, den das Video nicht einlöst.
 
 ---
 
-## 3) Shorts-Skript (30–45 s ≈ 75–110 Wörter)
+## 3) Shorts-Skript (28–40 s, ≤ 90 Wörter, eine Kernzahl)
 
 **Leitregel:** Reichweite entsteht durch Nicht-Wegwischen. Wichtigste Kennzahl ist *Viewed vs. Swiped Away*, die CTR zählt nicht. Die ersten 30–60 min (Seed-Test) entscheiden. 50–60 % der Abbrüche passieren in den ersten 3 s, ca. 80 % schauen stumm. Deshalb zuerst die **stumme Version** schreiben.
 
@@ -59,10 +63,10 @@ Alle Zahlen sind Richtwerte aus den Skills (Stand 2026) und sollten vierteljähr
 - **0–3 s STOP:** Hook (siehe Abschnitt 2). Etwas Interessantes steht im Bild, *bevor* das erste Wort fällt.
 - **3–6 s BRÜCKE:** Lücke vertiefen, Schleife öffnen („Punkt 3 überrascht die meisten“).
 - **6–35 s HOLD:** eine einzige Idee, nummerierte Schritte („1 von 3“). Alle 1–2 s ein neuer Info-Beat, alle 2–4 s ein Bildwechsel, nie länger als ca. 8 s ohne Wechsel. Jede Zeile muss packen, lehren oder eine Auflösung vorbereiten, sonst wird sie gestrichen.
-- **35–42 s PAYOFF:** liefert exakt, was der Hook versprochen hat. Der stärkste Punkt kommt zuletzt.
-- **Letzte ~2 s CTA/LOOP:** Der letzte Satz führt grammatisch in den ersten zurück. Beispiel: Ende „…und genau deshalb sind es“ → Anfang „603 €“. Ziel ist eine durchschnittliche Wiedergabe über 100 %.
+- **≈ 28–36 s PAYOFF:** liefert exakt, was der Hook versprochen hat. Der stärkste Punkt kommt zuletzt.
+- **Letzte ~2–4 s ENDE:** Teilen-Satz (TikTok) bzw. passender Langvideo-Verweis (YouTube) + Abschlusszeile, Endbild Groschen + Name (`docs/brand/STIMME.md`). Ein Loop (letzter Satz führt in den ersten) ist erlaubt, wenn er vor dem Teilen-Satz sitzt.
 
-**CTA-Varianten (max. ca. 2 s, an den Nutzen gebunden, nie „Like & Abo“):** Speichern („Speicher dir das für die Steuererklärung“) · Teilen („Schick das jemandem in Steuerklasse 5“) · Brücke („Die ganze Rechnung im langen Video, Link im Kommentar“) · Kommentar („Wie viel zahlst du? Schreib's unten rein“).
+**CTA-Varianten (max. ca. 2 s, an den Nutzen gebunden, nie „Like & Abo“):** Standard ist Teilen („Schick das an jemanden, der …“). Alternativ Speichern („Speicher dir das für die Steuererklärung“) · Brücke nur, wenn das Langvideo thematisch wirklich passt · Kommentar („Wie viel zahlst du? Schreib's unten rein“).
 
 **Untertitel:** eingebrannt, ab dem ersten Wort, 2 Zeilen mit je 32–42 Zeichen bzw. Häppchen von 4–7 Wörtern, kontrastreich, außerhalb der Shorts-UI-Zonen.
 **Zielwerte:** Viewed ≥ 75 % (unter 50 % bei 10–15 s heißt: der Hook ist das Problem) · Ø angesehen ≥ 70 % · Swipe-Away 10–30 %, über 40 % ist ein Warnsignal.
@@ -70,17 +74,17 @@ Alle Zahlen sind Richtwerte aus den Skills (Stand 2026) und sollten vierteljähr
 
 ---
 
-## 4) Langes Video-Skript (6–7 min)
+## 4) Langes Video-Skript (~10 min, Sonntag 17:00)
 
 **Zwei Hürden:** Die CTR bringt den Klick (gesund: 4–10 %, unter 3 % über eine Woche = Paketproblem). Die AVD hält den Zuschauer (≥ 50 % ist stark). Hohe CTR mit niedriger AVD wirkt wie Täuschung und führt zur Abwertung. Das wichtigste Signal 2026 ist der **Session-Beitrag**: Führt das Video zum nächsten Video?
-Hinweis: Der Skill nennt 8–15 min als Optimum, *wenn die Retention hält*. 6–7 min ohne Füllmaterial ist besser als gestreckte 10 min. Kürzen ist oft der stärkste Hebel.
+Zielwert seit 28.10.2026: **~10 min** (Skill-Optimum 8–15 min, *wenn die Retention hält*). Nicht strecken: Länge kommt aus zusätzlichen Kapiteln mit Konflikt bzw. Wendung, nicht aus Füllsätzen.
 
-**Paket zuerst:** Titel und Thumbnail-Konzept stehen *vor* dem Skript.
+**Paket zuerst (Pflicht, Engpass Klickrate):** 10 Titel, 3 deutlich verschiedene Thumbnails für „Testen & vergleichen“, *vor* dem Skript. Formeln („… erklärt wie für 5-Jährige“, „Was wäre wenn … – Jahr für Jahr“, „Der größte Betrug …“) in `docs/brand/SERIEN.md`. Der Groschen führt durch das Video.
 
-**Struktur (ca. 900–1.000 Wörter bei ~145 Wörtern/min):**
-- **0:00–0:30 Cold Open:** Versprechen + Beweis, Stakes oder Frage-Teaser. Das Paket wird sofort eingelöst, kein Kanal-Intro. Beispiel: „Wer 2026 in Rente geht, bekommt X € weniger als gedacht. Am Ende weißt du, ob du betroffen bist, und was du tun kannst.“
-- **0:30–1:00 Fahrplan:** 3–4 Kapitel nennen und eine große offene Schleife setzen („Der dritte Punkt betrifft fast jeden, und kaum jemand kennt ihn“).
-- **Körper in 4–5 Kapiteln à 60–90 s:** Vor jedem Kapitel ein **Re-Hook** (offene Frage, Musterbruch, Bildwechsel, Rechenbeispiel, stilisiertes Originalzitat). Eine Zahl pro Szene, die Animation zeigt sie, der Sprechtext erklärt sie.
+**Struktur (ca. 1.400–1.550 Wörter, Kapitel 0–7, Tempo 1,06):**
+- **0:00–0:45 Cold Open (Intro < 45 s, Versprechen in den ersten 10 s eingelöst bzw. gezeigt):** Versprechen + Beweis, Stakes oder Frage-Teaser. Das Paket wird sofort eingelöst, kein Kanal-Intro. Beispiel: „Wer 2026 in Rente geht, bekommt X € weniger als gedacht. Am Ende weißt du, ob du betroffen bist, und was du tun kannst.“
+- **bis ~1:00 Fahrplan:** 3–4 Kapitel nennen und eine große offene Schleife setzen („Der dritte Punkt betrifft fast jeden, und kaum jemand kennt ihn“).
+- **Körper in 6–7 Kapiteln à 60–110 s:** Vor jedem Kapitel ein **Re-Hook** (offene Frage, Musterbruch, Bildwechsel, Rechenbeispiel, stilisiertes Originalzitat). Eine Zahl pro Szene, die Animation zeigt sie, der Sprechtext erklärt sie.
 - **Story-Bogen:** Ausgangslage → Wendepunkt → Auflösung. Der Zuschauer ist der Held, Groschenfall der Guide. Mit einem konkreten Detail verankern („Frau K., 63, Brief der Rentenversicherung, Seite 3“), nur echt oder klar als Beispiel markiert.
 - **Fairness-Block:** beide Seiten mit ihrem stärksten Argument, belegt und als Originalzitat. Kein Spott.
 - **Letzte 30–45 s:** alle Schleifen auflösen, Kernsatz zum Mitnehmen, **ein** CTA, dann ein **explizites NEXT** (Endscreen auf ein konkretes Folgevideo oder eine Playlist). Kein „Abonnieren!“ mitten im Video, das kostet Session.
@@ -122,7 +126,8 @@ Hinweis: Der Skill nennt 8–15 min als Optimum, *wenn die Retention hält*. 6�
 - **Quellenblock:** alle Primärquellen mit Link und Datum. Danach **3–7 Links**, Playlist zuerst. Affiliate-Links kennzeichnen.
 - **Tags:** 3–5, der erste ist das exakte Primär-Keyword, nur relevante. Tags sind ein schwaches Signal.
 - Kategorie „Bildung“ oder „Nachrichten & Politik“ · madeForKids = **false** (wahrheitsgemäß angeben, COPPA) · „Altered Content“ bei KI-Bild oder KI-Stimme.
-- Shorts: Brücke zum Langvideo manuell bauen (angepinnter Kommentar, verwandtes Video), da die Algorithmen entkoppelt sind.
+- Shorts: „Ähnliches Video“ auf ein Langvideo nur setzen, wenn das Thema wirklich passt. Shorts sind keine Teaser (Übergang Short → Langvideo nur 1,2 %, Kanal-Analyse 21.10.).
+- **KI-Hinweis** in jeder Beschreibung (KANAL_REGELN).
 
 ---
 
@@ -145,16 +150,27 @@ Hinweis: Der Skill nennt 8–15 min als Optimum, *wenn die Retention hält*. 6�
 |---|---|---|
 | 1 | Hook | Lücke + konkrete Zahl, 3 Spuren, funktioniert stumm, ≤ 3 s |
 | 2 | Versprechen eingelöst | Payoff liefert genau das, was Hook, Titel und Thumbnail versprechen |
-| 3 | Retention-Bau | Bildwechsel alle 2–4 s (Short) bzw. Re-Hook alle 60–90 s (lang), kein Füllsatz |
+| 3 | Retention-Bau | Bildwechsel alle 2–4 s, Wendung alle 5–8 s (Short) bzw. Re-Hook alle 60–90 s (lang), kein Füllsatz |
 | 4 | Eigener Winkel | besteht den POV-Filter, Primärquelle oder Rechnung, die andere nicht haben |
 | 5 | Faktentreue | alle tragenden Behauptungen mit Primärquelle und Datum belegt, keine Zombie-Zahl |
 | 6 | Fairness | kein Parteien-Bashing, beide Seiten fair, Zitate wörtlich, Personen stilisiert |
 | 7 | Verständlichkeit | eine Idee (Short) bzw. ein Thema, Laie versteht es beim ersten Hören |
 | 8 | Paket | Keyword in den ersten 40 Zeichen, Thumbnail ≤ 4 Wörter ohne Titeldopplung, lesbar bei 168×94 |
 | 9 | Schluss | Loop (Short) bzw. explizites NEXT (lang), ein Nutzen-CTA |
-| 10 | Stimme und Länge | Short 75–110 Wörter, lang ca. 900–1.000 Wörter, Kanalton, keine KI-Floskeln |
+| 10 | Stimme und Länge | Short ≤ 90 Wörter / 28–40 s, lang ca. 1.400–1.550 Wörter, Kanalton (`docs/brand/STIMME.md`), keine Bann-Phrasen, TTS-Regeln eingehalten |
 
-**Bestehen:** Durchschnitt ≥ 8,0 **und** keine Einzelnote unter 6. **Harte Tore:** Kriterien 2, 5 und 6 müssen ≥ 8 sein, sonst ist das Skript blockiert, egal wie hoch der Gesamtwert ist. Nach dem Prinzip „Wahrheit + Sog“ aus dem Hook-Scoring gilt: Ein Hook, der zu viel verspricht, ist disqualifiziert.
+**Harte Hook-Tore (Handbuch G2, je bestanden/nicht bestanden, in dieser Reihenfolge; ein nicht bestandenes Tor blockiert):**
+| Tor | Bestanden, wenn |
+|---|---|
+| H0 Schlüsselbild | Frame 0 = konkreter Gegenstand + Euro-Betrag, hell, ≤ 5 Wörter, in 1 s verständlich (`docs/brand/LOOK.md`) |
+| H1 Kein Delay | Thema in ≤ 1,5 s klar, erstes Wort ≤ 0,2 s, kein Füllsatz, kein Intro |
+| H2 Klarheit | einfache Wörter, aktiv, kein Jargon/Behördenname in Satz 1, nicht missverständlich |
+| H3 Relevanz | „du/dein“ oder Euro-Betrag in Satz 1 + echte Situation bzw. echter Schmerz |
+| H4 Kontrast | A (was der Zuschauer glaubt) gegen B (das Überraschende) erkennbar |
+| H5 Alignment | Bild, Overlay, Sprache und Ton sagen dasselbe; Stumm-Test am Kontaktbogen (0 / 0,5 / 1 / 2 s) bestanden (prüft der Bild-Kritiker) |
+Zusätzlich: Pointe vor dem Hook festgelegt, ≥ 2 Hook-Formate geschrieben, keine Bann-Phrase, kein Schluss-Signal außer der Abschlusszeile, Signet verdeckt keinen Betrag.
+
+**Bestehen (Nachtlauf):** **≥ 8 in jeder Kategorie** (strenger als der frühere Durchschnitt ≥ 8,0) **und** alle Hook-Tore bestanden. Kriterien 2, 5 und 6 sind zusätzlich harte Tore. Nach dem Prinzip „Wahrheit + Sog“ gilt: Ein Hook, der zu viel verspricht, ist disqualifiziert.
 
 ---
 
@@ -165,5 +181,5 @@ Hinweis: Der Skill nennt 8–15 min als Optimum, *wenn die Retention hält*. 6�
 - **Organisch** (Shorts, Hooks, Uhrzeit): nacheinander gepostete Paare, Laufzeit ≥ 7 Tage (kleiner Kanal 2–4 Wochen). Gewertet wird nur ein Effekt von **≥ 20 %**, der konsistent auftritt. Erst nach **3–5 Wiederholungen** gilt etwas als Regel. Ein Gleichstand ist ein gültiges Ergebnis: dann den nächsten Hebel testen.
 - **Langvideo: natives Test & Compare** mit bis zu 3 Thumbnails, Titeln oder Kombinationen. Sieger nach Watch-Time-Anteil, Laufzeit bis ca. 14 Tage. Nicht für Shorts. Unter 1.000 Impressionen pro Woche ist das Ergebnis meist ohne Aussage. Getestet werden **deutlich verschiedene** Konzepte (Zahl vs. Frage, Kurve vs. Objekt), keine Mini-Änderungen.
 - **Prioritäten:** Hook/erstes Bild → Thumbnail/Titel → Uploadzeit → Länge/Format → CTA.
-- **30-Tage-Sprint:** Woche 1 Hooks, 2 erstes Bild/Thumbnail, 3 Uhrzeit, 4 CTA. Immer genau ein Test aktiv.
+- **Testplan:** gilt der aktuelle Plan in `docs/AUSWERTUNG_AKTUELL.md` (eine Variable je 10 Shorts, Plattformen getrennt bewertet, Erwartung vor jedem Post). Immer genau ein Test aktiv.
 - **Test-Log:** Datum · Variable · A vs. B · Metrik · Effekt · Entscheidung · Erkenntnis. Kein p-Hacking, keine verschobenen Ziele, keine erfundenen Ergebnisse.

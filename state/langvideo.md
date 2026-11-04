@@ -9,7 +9,8 @@
   - Sa 07.11.: Kap. 4–7, Bild-Kritiker, Render, Mix, SRT, 3 Thumbnails, UPLOAD.md → **für So 08.11. 17:00 auf YouTube terminieren**, Jona melden
   - So 08.11.: Puffer (bis 15:30 terminieren)
   - Guthaben: ~27.500 Credits frei am 04.11. (Shorts ~1.000/Tag + V8 ~10.000) – reicht, aber knapp; vor der Stimme prüfen.
-Rhythmus siehe NIGHT_RUN.md §L. Veröffentlichung Sonntag 18:00, Jona gibt frei.
+  - **Marke v2 (ab 05.11.):** V8 mit Packaging-Paket (10 Titel, 3 deutlich verschiedene Thumbnails für „Testen & vergleichen“, vor dem Skript; wenn Skript v1 schon steht, Paket in der Do-Etappe nachholen), Intro < 45 s, Versprechen in 10 s; der Groschen führt durch, sobald `kit/Groschen.tsx` abgenommen ist (NIGHT_RUN §B). Formeln: `docs/brand/SERIEN.md`.
+Rhythmus siehe NIGHT_RUN.md §L. Veröffentlichung Sonntag 17:00, vom Nachtlauf nach Text- und Bild-Kritiker-Freigabe selbst terminiert (seit 04.11.2026; ältere Angaben „18:00, Jona gibt frei“ weiter unten sind überholt).
 
 ## Woche bis So 01.11.2026 – V6 „Minijobs“ (Einstieg mitten in der Woche)
 - Ausgangslage 28.10.: Skript `docs/Video05-Minijobs-Skript.md` (V6, ~1.023 Wörter ≈ 6–7 min) + Faktenblatt vorhanden, Kritiker-Freigabe R2 Ø 8,2 (Auflage: 3 gesperrte Primärquellen selbst öffnen), Thumbnails T6A–C vorhanden.
