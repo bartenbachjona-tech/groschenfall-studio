@@ -66,7 +66,7 @@ Zitate sind Kurzzitate (WebFetch liefert max. ca. 125 Zeichen wörtlich).
 | X4 | Kfz-Typklassen 2027 | GDV (Verband, keine amtliche Quelle); Frist 30.11. liegt vor dem Januar | Verbandsangabe | weglassen (Short S23 lief schon) |
 | X5 | Rentenbeitrag 2027 | in dieser Sitzung nicht geprüft | – | weglassen |
 | X6 | Minijob-Pauschsteuer 2 → 5 % | steht im selben Entwurf 21/8235 (V7), Anhörung 04.11. | Entwurf | weglassen (V7 behandelt es; NEXT verweist auf V7) |
-| X7 | Antragsloses Kindergeld | Bundestag 09.07., Bundesrat 25.09. (nur sekundär gegen-hartz.de), Start stufenweise ab März 2027 | nur sekundär | weglassen (Verwechslungsgefahr mit F30) |
+| X7 | Antragsloses Kindergeld | Bundestag 09.07., Bundesrat 25.09. (nur sekundär gegen-hartz.de), Start stufenweise ab März 2027 → **falsch laut Faktencheck 05.11.:** BGBl. 2026 I Nr. 307 (20.10.2026), in Kraft 01.01.2027, nur Neugeborene | Primär (BGBl.) | weglassen (Verwechslungsgefahr mit F30) |
 
 ## Offene Punkte für den Faktencheck Do 05.11. (Priorität)
 1. **F36/F37 (tragend):** § 175 SGB V aktuelle Fassung + Streichung der Hinweispflicht im BGBl. 2026 I Nr. 228 selbst lesen; „Rückkehr der Info-Pflicht“ belegen oder Satz streichen. Davon hängen Pointe, Titel 7 und Thumbnail T8B ab.
@@ -80,3 +80,8 @@ Zitate sind Kurzzitate (WebFetch liefert max. ca. 125 Zeichen wörtlich).
 9. **F3:** Bekanntmachung der Geringfügigkeitsgrenze 2027 (BMAS/Bundesanzeiger oder Minijob-Zentrale).
 10. **F10/F16:** Bis Samstag: Tankrabatt-Verlängerung oder Spritpreisdeckel-Entwurf? Dann Skript anpassen (Liste in Skript „Hinweise“).
 11. Autocomplete-Check Suchwort (Paket §2).
+
+
+## Faktencheck 05.11.2026 (Nacht #11)
+Vollständige Tabelle mit Quellen: `docs/Video08-Faktencheck-2026-11-05.md`. Kernpunkte: § 175 Brief-Pflicht seit 30.07.2026 entfallen (bestätigt), Rückkehr per Änderungsantrag 9 (Ausschussdrs. 21(14)107) an der Notfallreform geplant, Bundestag 15.10., Bundesrat 20.11. → Skript v2 „verlass dich nicht auf Post“. Minister Dr. Carsten Linnemann + Zitat wörtlich bestätigt (BMG-PM 30.10.2026). CO2-Preis 55–65 € nur Bundestag, Bundesrat 20.11. Tankrabatt „rund vier Fünftel“ = WD 14/26 (78–83 %). Tabaksteuer bestätigt (BGBl. 2026 I Nr. 309; Zoll-Klarstellung zum Inkrafttreten Zigarren/Pfeifentabak 01.03.2027). Zuzahlungen ab Januar nur indirekt bestätigt. Anhörung 04.11. Finanzausschuss bestätigt. „Mehrere hundert Euro zwischen Kassen“ nicht verifiziert → gestrichen.
+**Vor Samstag selbst prüfen:** Drs. 21/8629 (Nr. 20a § 175 im Beschluss? Inkrafttreten Notfallreform), Bundesrat-TO 20.11., Zoll-Tarifseite Tabak „bis 14.02.2027“, Art. 8 BGBl. 2026 I Nr. 228 (Zuzahlungen).

@@ -14,7 +14,7 @@ Stand: Mi 04.11.2026 (Mittwochs-Etappe, verkürzte Woche laut `state/langvideo.m
 | Haltbarkeit | bis ca. Ende Januar 2027 aktuell | nur bis 31.12. |
 **Entscheidung: „Das ändert sich 2027“ (Stichtag 1. Januar).** Der Dezember hat zu wenig Euro-Substanz für ~10 Minuten; seine stärksten Punkte (Tankrabatt-Ende) wirken ohnehin am 1. Januar und sind im Video enthalten.
 
-**POV-Filter (Was macht es zu Groschenfall?):** (1) Status-Ampel bei jeder Änderung: Gesetz / nur Bundestag / Entwurf / angekündigt; die Konkurrenz mischt das oft. (2) Ein Haushalt (Nina, Tom, Emil) als roter Faden, jede Änderung als Euro-Beispiel mit „du“. (3) Die offene Schleife „Deine Kasse muss dich nicht mehr per Brief warnen“ (seit 30.07.2026), die in den üblichen Listen fehlt. (4) Bei jeder Änderung ein Hebel („Was du tun kannst“).
+**POV-Filter (Was macht es zu Groschenfall?):** (1) Status-Ampel bei jeder Änderung: Gesetz / nur Bundestag / Entwurf / angekündigt; die Konkurrenz mischt das oft. (2) Ein Haushalt (Nina, Tom, Emil) als roter Faden, jede Änderung als Euro-Beispiel mit „du“. (3) Die offene Schleife „Deine Kasse muss dich seit dem Sommer nicht mehr per Brief warnen – verlass dich nicht auf Post“ (Wegfall seit 30.07.2026, Rückkehr geplant, Stand 05.11.), die in den üblichen Listen fehlt. (4) Bei jeder Änderung ein Hebel („Was du tun kannst“).
 **Wiederholung?** Einzelthemen liefen als Shorts (S12, S15, S17, S18, S20, S21). Das Langvideo ist ein neues Format (Bündel + Haushalt + Status) und kein Teaser; Shorts der Woche werden nicht als Teaser gebaut (SERIEN.md).
 
 ### Scoring PLAYBOOK §1 (je 0–2)
@@ -29,7 +29,7 @@ Stand: Mi 04.11.2026 (Mittwochs-Etappe, verkürzte Woche laut `state/langvideo.m
 | **Summe** | **11 / 12** | ≥ 8 → Produktion |
 Zum Vergleich „Das ändert sich im Dezember“: Nachfrage 1, Geld 1, Neuigkeit 1, Beleg 2, Paket 1, Fairness 2 = **8/12** (knapp, verworfen).
 
-**Themenfilter (POSITIONIERUNG):** „Was muss ich jetzt tun / was steht mir zu?“ (Lohnzettel prüfen, Jobticket, Quittungen, Kasse bis 31.1. wechseln) und „Wer zahlt drauf?“ (Haushalt Nina/Tom). Schlüsselbild: Küchentisch mit Ticket „+3,80 €“, Lohnzettel „+0,70 €/h“, Zapfpistole „+17 ct/l“ (G1 bestanden).
+**Themenfilter (POSITIONIERUNG):** „Was muss ich jetzt tun / was steht mir zu?“ (Lohnzettel prüfen, Jobticket, Quittungen, Kasse bis 31.1. wechseln) und „Wer zahlt drauf?“ (Haushalt Nina/Tom). Schlüsselbild: Küchentisch mit Ticket „+3,80 €“, Lohnzettel „+0,70 €/h“, Zapfpistole „−17 ct Rabatt“ (G1 bestanden).
 
 ## 2. Suchwort
 - **Primär:** „**Das ändert sich 2027**“ (Jahreswechsel-Formel, wie „Das ändert sich 2026“ im Vorjahr). Varianten für Tags/Beschreibung: „Was ändert sich 2027“, „ab Januar 2027“, „Änderungen 2027“.
@@ -44,11 +44,11 @@ Zum Vergleich „Das ändert sich im Dezember“: Nachfrage 1, Geld 1, Neuigkeit
 | 4 | Das ändert sich 2027 für dein Geld: Plus oder Minus | 51 | dupliziert T8C-Text „Plus oder Minus?“, nur mit T8A/T8B kombinieren |
 | 5 | Das ändert sich 2027: Mindestlohn, Kasse, Ticket, Sprit | 55 | Keyword-Liste, gut für Suche, schwächer für Klick |
 | 6 | Ab Januar 2027: 7 Änderungen, die du in Euro spürst | 51 | Suchwort-Variante „ab Januar 2027“ |
-| 7 | Das ändert sich 2027: Deine Kasse muss nicht mehr warnen | 56 | Top 3; zielt auf den Haken in Kap. 7 (gedeckt: Hinweispflicht entfallen, F36 – vor Nutzung bestätigen!) |
+| 7 | Das ändert sich 2027: Deine Kasse muss nicht mehr warnen | 56 | **GESPERRT (Faktencheck 05.11.: Brief-Pflicht soll zurückkommen, Bundesrat 20.11.)** – früher Top 3; zielt auf den Haken in Kap. 7 (gedeckt: Hinweispflicht entfallen, F36 – vor Nutzung bestätigen!) |
 | 8 | Das ändert sich 2027: Was beschlossen ist, was nicht | 52 | Status-Winkel, ehrlich, aber weniger Euro |
 | 9 | Neu ab Januar 2027: Was sich für dein Geld wirklich ändert | 58 | Power-Word „wirklich“ |
 | 10 | Das ändert sich 2027: Mehr Lohn, teureres Ticket, Sprit | 55 | konkret, aber Tabak/Kasse fehlen |
-**Auswahl für Test & Compare (falls Titel-Test angeboten):** 1 · 3 · 7. Sonst Titel 1 fest, Thumbnails testen.
+**Auswahl für Test & Compare (falls Titel-Test angeboten):** 1 · 3 · 8. Sonst Titel 1 fest, Thumbnails testen.
 **Nie verwenden (sachlich falsch oder überzogen):** „Alles wird teurer ab Januar“ (Mindestlohn, Kindergeld-Entwurf, CO2 stabil), „Kindergeld steigt auf 267 €“ ohne „geplant“, „Spritpreisdeckel kommt“, „Krankenkasse wird teurer“ (Ø bleibt 2,9 %), „Rauchen kostet 945 € mehr“ (Entwurfsprognose bis 2030, nicht 2027).
 
 ## 4. Drei deutlich verschiedene Thumbnails (Stil T5D, `src/ch/Thumb5.tsx`)
@@ -66,7 +66,7 @@ Gemeinsam (KANAL_REGELN Optik): 1280×720, Nachtblau-Hintergrund mit Vignette + 
 - **Objekt:** großer 3D-Briefkasten (Metall, Nachtblau-Grau), Klappe offen, **leer**, auf der Diagonale; ein gestrichelter Brief-Umriss schwebt davor und „verblasst“ (Opacity 0,35), kleines bernsteinfarbenes „%“-Etikett am Kasten.
 - **Figur:** Groschen (`lupe`) bzw. Nina, die in den leeren Briefkasten schaut.
 - **Remotion:** Briefkasten aus 3 Flächen (Front, Seite, Klappe) mit linearen Verläufen, `rotateY(22deg)`; Brief-Umriss `border: 6px dashed rgba(255,255,255,.5)`; Lupe als SVG. Headline links, Objekt rechts.
-- **Versprechen:** „Was passiert mit meiner Krankenkasse, und warum kommt kein Brief?“ → Kap. 7 (Hinweispflicht entfallen, Sonderkündigung bis 31.1.). **Nur verwenden, wenn F36 morgen bestätigt ist.** Test & Compare wertet nach Watch-Time: Da Kap. 7 am Ende steht, ist dieses Motiv der härteste Test, ob Zuschauer bis zum Payoff bleiben.
+- **Versprechen:** „Was passiert mit meiner Krankenkasse, und warum kommt kein Brief?“ → Kap. 7 (Hinweispflicht entfallen, Sonderkündigung bis 31.1.). **Faktencheck 05.11.: Wegfall bestätigt, Rückkehr geplant → nur als Frage „Kein Brief?“ zulässig, nicht als Behauptung; Stand am Samstag erneut prüfen.** Test & Compare wertet nach Watch-Time: Da Kap. 7 am Ende steht, ist dieses Motiv der härteste Test, ob Zuschauer bis zum Payoff bleiben.
 
 ### T8C – „Objekt“ (Waage)
 - **Text:** Kicker „**2027**“ · Headline „**Plus oder Minus?**“ (2 Zeilen: „Plus oder“ / „Minus?“; 4 Wörter inkl. Kicker).

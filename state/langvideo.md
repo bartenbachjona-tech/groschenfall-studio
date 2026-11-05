@@ -2,6 +2,14 @@
 
 # Wochen-Langvideo – Stand
 
+## Stand Nacht 05.11.2026 (Lauf #11) – Etappe Do ✅
+- **Faktencheck** mit Primärquellen: `docs/Video08-Faktencheck-2026-11-05.md`. § 175 Brief-Pflicht seit 30.07.2026 entfallen (bestätigt), **Rückkehr geplant** (Änderungsantrag 9, Ausschussdrs. 21(14)107 an der Notfallreform, Bundestag 15.10., Bundesrat 20.11.) → Pointe umgebaut auf „Verlass dich nicht auf Post“. Minister **Dr. Carsten Linnemann** + Zitat wörtlich bestätigt (BMG-PM 30.10.). CO2-Preis nur Bundestag (Bundesrat 20.11.). Faktenblatt X7 Kindergeld-Start korrigiert. „Mehrere hundert Euro zwischen Kassen“ gestrichen.
+- **Skript v2.1** (1.495 Wörter ≈ 9:43, Intro 114 W. ≈ 44 s): Text-Kritiker (fable) R1 Ø 8,1 ÜBERARBEITEN → R2 **Ø 8,7 FREIGABE**, Hook-Tore H0–H4 bestanden. Hook-Varianten dokumentiert (Fortune Teller gewählt). Paket: Titel 7 gesperrt, Test-Set Titel 1·3·8, T8B nur als Frage nach Samstags-Prüfung.
+- **Storyboard:** `docs/Video08-Aenderungen2027-Storyboard.md` (82 Szenen, Kapitelstarts 0:00 · 0:44 · 1:58 · 2:46 · 4:09 · 5:10 · 6:20 · 7:25, Musik 0/118/249/380 s, Groschen 20 Auftritte, 18 neue Bausteine für kit8, 13 offene Punkte für den Bild-Kritiker).
+- **Groschen abgenommen** (Bild-Kritiker pass, 05.11.) → führt in V8 durch.
+- **BLOCKER Fr 06.11. Stimme:** Johannes gesperrt (Jona 04.11. 12:05), neue Voice-ID steht noch NICHT in docs/brand/STIMME.md → V8-Stimme kann nicht erzeugt werden. Plan Fr, falls die ID fehlt: ohne Stimme vorarbeiten (kit8-Bausteine, Thumbnails T8A–C, Kapitel-Gerüste mit geschätzten Zeiten), Jona erneut melden. Ohne Stimme bis Sa ~12:00 ist So 08.11. 17:00 nicht zu halten → Termin rutscht auf So 15.11. 17:00 (NIGHT_RUN „Verpasster Sonntag“).
+- **Samstags-Prüfpunkte vor Aufnahme/Upload:** Drs. 21/8629 (§ 175 im Beschluss? Inkrafttreten), Bundesrat-TO 20.11., BEHG-Status, § 249 hälftige Tragung belegen, Zoll-Tarifseite Tabak, Art. 8 BGBl. 2026 I Nr. 228 (Zuzahlungen), T8B neu freigeben.
+
 ## Stand Nacht 04.11.2026 (Lauf #10)
 - **V7 Minijobs TERMINIERT: Mi 04.11.2026 17:00 https://youtu.be/w_SKOiCvULk** (Haupt-Thumbnail T7D, Kapitel + Quellen in der Beschreibung; kein A/B-Thumbnail-Test).
 - **V8 Etappe Mi ✅:** Thema „Das ändert sich 2027 – für dein Geld“ (7 Änderungen, Scoring 11/12). Dateien: `docs/Video08-Aenderungen2027-Faktenblatt.md`, `…-Paket.md` (10 Titel, Favorit „Das ändert sich 2027: 7 Dinge, die du in Euro spürst“, Thumbnails T8A Kalender „AB JANUAR / Teurer?“ (Haupt), T8B Briefkasten „KRANKENKASSE / Kein Brief?“, T8C Waage „2027 / Plus oder Minus?“), `…-Skript.md` (v1, 1.443 Wörter ≈ 9:22, Kap. 0–7, Pointe: Kasse darf ohne Brief erhöhen).
