@@ -1,5 +1,6 @@
 import { Composition } from "remotion";
 import { TestScene } from "./TestScene";
+import { GroschenTest, GT_DUR } from "./kit/GroschenTest";
 import { Ch0, CH0_DUR } from "./ch/Ch0";
 import { Ch1, CH1_DUR } from "./ch/Ch1";
 import { Ch2, CH2_DUR } from "./ch/Ch2";
@@ -137,6 +138,7 @@ export const RemotionRoot = () => (
     <Composition id="ThumbB" component={ThumbB} durationInFrames={1} fps={30} width={1280} height={720} />
     <Composition id="ThumbC" component={ThumbC} durationInFrames={1} fps={30} width={1280} height={720} />
     <Composition id="ThumbD" component={ThumbD} durationInFrames={1} fps={30} width={1280} height={720} />
+    <Composition id="GroschenTest" component={GroschenTest} durationInFrames={GT_DUR} fps={30} width={1080} height={1920} />
     <Composition id="EndCard" component={EndCard} durationInFrames={END_DUR} {...V} />
   </>
 );
